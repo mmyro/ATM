@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33122.133
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "Projeto2_MbWay_wPedro", "Projeto2_MbWay_wPedro\Projeto2_MbWay_wPedro.vbproj", "{82160CCC-CE42-42DE-B08C-2021129F77CE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|x86 = Debug|x86
+		Release|Any CPU = Release|Any CPU
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{82160CCC-CE42-42DE-B08C-2021129F77CE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{82160CCC-CE42-42DE-B08C-2021129F77CE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{82160CCC-CE42-42DE-B08C-2021129F77CE}.Debug|x86.ActiveCfg = Debug|x86
+		{82160CCC-CE42-42DE-B08C-2021129F77CE}.Debug|x86.Build.0 = Debug|x86
+		{82160CCC-CE42-42DE-B08C-2021129F77CE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{82160CCC-CE42-42DE-B08C-2021129F77CE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{82160CCC-CE42-42DE-B08C-2021129F77CE}.Release|x86.ActiveCfg = Release|x86
+		{82160CCC-CE42-42DE-B08C-2021129F77CE}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {4C551B14-0404-4940-A7A0-ED831AAB87FF}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,14 @@
+C:\Users\Myro\Desktop\Projeto2_MbWay_wPedro\Projeto2_MbWay_wPedro\bin\x86\Debug\Projeto2_MbWay_wPedro.exe.config
+C:\Users\Myro\Desktop\Projeto2_MbWay_wPedro\Projeto2_MbWay_wPedro\bin\x86\Debug\Projeto2_MbWay_wPedro.exe
+C:\Users\Myro\Desktop\Projeto2_MbWay_wPedro\Projeto2_MbWay_wPedro\bin\x86\Debug\Projeto2_MbWay_wPedro.pdb
+C:\Users\Myro\Desktop\Projeto2_MbWay_wPedro\Projeto2_MbWay_wPedro\bin\x86\Debug\Projeto2_MbWay_wPedro.xml
+C:\Users\Myro\Desktop\Projeto2_MbWay_wPedro\Projeto2_MbWay_wPedro\obj\x86\Debug\Projeto2_MbWay_wPedro.vbproj.AssemblyReference.cache
+C:\Users\Myro\Desktop\Projeto2_MbWay_wPedro\Projeto2_MbWay_wPedro\obj\x86\Debug\Projeto2_MbWay_wPedro.vbproj.SuggestedBindingRedirects.cache
+C:\Users\Myro\Desktop\Projeto2_MbWay_wPedro\Projeto2_MbWay_wPedro\obj\x86\Debug\Projeto2_MbWay_wPedro.FrmLogin.resources
+C:\Users\Myro\Desktop\Projeto2_MbWay_wPedro\Projeto2_MbWay_wPedro\obj\x86\Debug\Projeto2_MbWay_wPedro.Form2.resources
+C:\Users\Myro\Desktop\Projeto2_MbWay_wPedro\Projeto2_MbWay_wPedro\obj\x86\Debug\Projeto2_MbWay_wPedro.Resources.resources
+C:\Users\Myro\Desktop\Projeto2_MbWay_wPedro\Projeto2_MbWay_wPedro\obj\x86\Debug\Projeto2_MbWay_wPedro.vbproj.GenerateResource.cache
+C:\Users\Myro\Desktop\Projeto2_MbWay_wPedro\Projeto2_MbWay_wPedro\obj\x86\Debug\Projeto2_MbWay_wPedro.vbproj.CoreCompileInputs.cache
+C:\Users\Myro\Desktop\Projeto2_MbWay_wPedro\Projeto2_MbWay_wPedro\obj\x86\Debug\Projeto2_MbWay_wPedro.exe
+C:\Users\Myro\Desktop\Projeto2_MbWay_wPedro\Projeto2_MbWay_wPedro\obj\x86\Debug\Projeto2_MbWay_wPedro.xml
+C:\Users\Myro\Desktop\Projeto2_MbWay_wPedro\Projeto2_MbWay_wPedro\obj\x86\Debug\Projeto2_MbWay_wPedro.pdb
