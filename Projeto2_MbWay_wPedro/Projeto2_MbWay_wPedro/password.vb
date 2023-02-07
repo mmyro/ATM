@@ -7,4 +7,8 @@
             MsgBox("Palavra passe não coincide!", MsgBoxStyle.Exclamation)
         End If
     End Sub
+
+    Private Sub password_closed(sender As Object, e As EventArgs) Handles MyBase.Closed
+        Application.Exit()
+    End Sub
 End Class

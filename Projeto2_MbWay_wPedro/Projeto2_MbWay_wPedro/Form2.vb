@@ -1,9 +1,5 @@
 ﻿Public Class Form2
 
-    Private Sub Form2_Closed(sender As Object, e As EventArgs) Handles MyBase.Closed
-        Application.Exit()
-    End Sub
-
     Sub trocarPainel(ByVal panel As Form)
         Panel2.Controls.Clear()
         panel.TopLevel = False
@@ -36,5 +32,9 @@
 
     Private Sub BtnAlterarCod_Click(sender As Object, e As EventArgs) Handles BtnAlterarCod.Click
         trocarPainel(Definicoes)
+    End Sub
+
+    Private Sub Form2_closed(sender As Object, e As EventArgs) Handles MyBase.Closed
+        Application.Exit()
     End Sub
 End Class
