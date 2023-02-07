@@ -15,6 +15,7 @@
 
     Private Sub BtnConsultas_Click(sender As Object, e As EventArgs) Handles BtnConsultas.Click
         trocarPainel(Consultas)
+        Consultas.LblDinheiro.Text = "Saldo atual:" & vbCrLf & "-------------" & vbCrLf & clientes(Val(FrmLogin.TxtBoxUsername.Text), 0)
     End Sub
 
     Private Sub BtnDepositos_Click(sender As Object, e As EventArgs) Handles BtnDepositos.Click
@@ -33,11 +34,7 @@
         trocarPainel(Levantamentos)
     End Sub
 
-    Private Sub Button5_Click(sender As Object, e As EventArgs) Handles Button5.Click
+    Private Sub BtnAlterarCod_Click(sender As Object, e As EventArgs) Handles BtnAlterarCod.Click
         trocarPainel(Definicoes)
-    End Sub
-
-    Private Sub Panel2_Paint(sender As Object, e As PaintEventArgs) Handles Panel2.Paint
-
     End Sub
 End Class

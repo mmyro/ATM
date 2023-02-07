@@ -168,6 +168,12 @@
     <Compile Include="Pagamentos.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="password.Designer.vb">
+      <DependentUpon>password.vb</DependentUpon>
+    </Compile>
+    <Compile Include="password.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Transferencias.Designer.vb">
       <DependentUpon>Transferencias.vb</DependentUpon>
     </Compile>
@@ -196,12 +202,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
-      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
       <CustomToolNamespace>My.Resources</CustomToolNamespace>
       <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="Pagamentos.resx">
       <DependentUpon>Pagamentos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="password.resx">
+      <DependentUpon>password.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Transferencias.resx">
       <DependentUpon>Transferencias.vb</DependentUpon>
@@ -218,6 +227,7 @@
       <LastGenOutput>Settings.Designer.vb</LastGenOutput>
     </None>
     <None Include="App.config" />
+    <None Include="Resources\Admin.png" />
   </ItemGroup>
   <ItemGroup>
     <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">
@@ -230,6 +240,9 @@
       <ProductName>.NET Framework 3.5 SP1</ProductName>
       <Install>false</Install>
     </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Clientes.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>

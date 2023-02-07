@@ -1,12 +1,18 @@
 ﻿Public Class FrmLogin
     Dim ok As Boolean = False
     Dim Tentativas As Integer = 3
+    Public User As Integer
     Private Sub BtnEntrar_Click(sender As Object, e As EventArgs) Handles BtnEntrar.Click
-        Dim User As Integer = Val(TxtBoxUsername.Text)
+        User = Val(TxtBoxUsername.Text)
         IniciarClientes()
-        If clientes(User, 1) = Val(TxtBoxPassword.Text) Then
+        If User = 99 And TxtBoxPassword.Text = "0000" Then
             Me.Hide()
             Form2.Show()
+            Form2.PicBoxCartao.Image = My.Resources.Admin
+        ElseIf clientes(User, 1) = Val(TxtBoxPassword.Text) Then
+            Me.Hide()
+            Form2.Show()
+            Form2.PicBoxCartao.Image = My.Resources.Clientes
         ElseIf Tentativas = 0 Then
             TxtBoxPassword.Clear()
             TxtBoxUsername.Clear()
@@ -20,6 +26,7 @@
             TxtBoxPassword.Clear()
             BtnEntrar.Enabled = False
         End If
+
 
     End Sub
 
@@ -140,7 +147,7 @@
 
     Private Sub BntOk_Click(sender As Object, e As EventArgs) Handles BtnOk.Click
         Dim User As Integer = Val(TxtBoxUsername.Text)
-        If User >= 0 And User <= 6 Then
+        If User >= 0 And User <= 6 Or User = 99 Then
             ok = True
 
         Else
@@ -150,11 +157,13 @@
     End Sub
 
     Private Sub BtnLimpar_Click(sender As Object, e As EventArgs) Handles BtnLimpar.Click
-        If TxtBoxPassword.Text.Length > 0 Then
-            TxtBoxPassword.Text = TxtBoxPassword.Text.Remove(TxtBoxPassword.Text.Length - 1, 1)
+        If TxtBoxUsername.Text.Length > 0 And ok = False Then
+            TxtBoxUsername.Text = TxtBoxUsername.Text.Remove(TxtBoxUsername.Text.Length - 1, 1)
         End If
-        If TxtBoxPassword.Text Then
-            TxtBoxPassword.Text = ""
+        If TxtBoxPassword.Text.Length > 0 And ok = True Then
+            TxtBoxPassword.Text = TxtBoxPassword.Text.Remove(TxtBoxPassword.Text.Length - 1, 1)
+        ElseIf TxtBoxPassword.Text.Length = 0 And ok = True Then
+            ok = False
         End If
     End Sub
 End Class

@@ -29,15 +29,14 @@ Partial Class Consultas
         'LblTitulo
         '
         Me.LblTitulo.BackColor = System.Drawing.Color.RoyalBlue
-        Me.LblTitulo.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.LblTitulo.Font = New System.Drawing.Font("Segoe UI", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LblTitulo.ForeColor = System.Drawing.Color.White
-        Me.LblTitulo.Location = New System.Drawing.Point(12, 9)
+        Me.LblTitulo.Location = New System.Drawing.Point(1, -1)
         Me.LblTitulo.Name = "LblTitulo"
-        Me.LblTitulo.Size = New System.Drawing.Size(217, 46)
+        Me.LblTitulo.Size = New System.Drawing.Size(243, 56)
         Me.LblTitulo.TabIndex = 0
-        Me.LblTitulo.Text = "Consultas:"
-        Me.LblTitulo.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.LblTitulo.Text = "Consultas"
+        Me.LblTitulo.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         '
         'LblDinheiro
         '

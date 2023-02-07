@@ -29,15 +29,11 @@ Partial Class Form2
         Me.BtnTransferencias = New System.Windows.Forms.Button()
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.BtnLevantamentos = New System.Windows.Forms.Button()
-        Me.PixBox2 = New System.Windows.Forms.PictureBox()
-        Me.PicBox1 = New System.Windows.Forms.PictureBox()
-        Me.Button5 = New System.Windows.Forms.Button()
+        Me.PicBoxCartao = New System.Windows.Forms.PictureBox()
+        Me.BtnAlterarCod = New System.Windows.Forms.Button()
         Me.Panel2 = New System.Windows.Forms.Panel()
-        Me.Button1 = New System.Windows.Forms.Button()
         Me.Panel1.SuspendLayout()
-        CType(Me.PixBox2, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PicBox1, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.Panel2.SuspendLayout()
+        CType(Me.PicBoxCartao, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'BtnConsultas
@@ -91,10 +87,9 @@ Partial Class Form2
         'Panel1
         '
         Me.Panel1.Controls.Add(Me.BtnLevantamentos)
-        Me.Panel1.Controls.Add(Me.PixBox2)
         Me.Panel1.Controls.Add(Me.BtnConsultas)
-        Me.Panel1.Controls.Add(Me.PicBox1)
-        Me.Panel1.Controls.Add(Me.Button5)
+        Me.Panel1.Controls.Add(Me.PicBoxCartao)
+        Me.Panel1.Controls.Add(Me.BtnAlterarCod)
         Me.Panel1.Controls.Add(Me.BtnTransferencias)
         Me.Panel1.Controls.Add(Me.BtnPagamentos)
         Me.Panel1.Controls.Add(Me.BtnDepositos)
@@ -115,55 +110,35 @@ Partial Class Form2
         Me.BtnLevantamentos.Text = "Levantamentos"
         Me.BtnLevantamentos.UseVisualStyleBackColor = False
         '
-        'PixBox2
+        'PicBoxCartao
         '
-        Me.PixBox2.Image = CType(resources.GetObject("PixBox2.Image"), System.Drawing.Image)
-        Me.PixBox2.Location = New System.Drawing.Point(0, 0)
-        Me.PixBox2.Name = "PixBox2"
-        Me.PixBox2.Size = New System.Drawing.Size(145, 57)
-        Me.PixBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage
-        Me.PixBox2.TabIndex = 0
-        Me.PixBox2.TabStop = False
+        Me.PicBoxCartao.Image = CType(resources.GetObject("PicBoxCartao.Image"), System.Drawing.Image)
+        Me.PicBoxCartao.Location = New System.Drawing.Point(0, 0)
+        Me.PicBoxCartao.Name = "PicBoxCartao"
+        Me.PicBoxCartao.Size = New System.Drawing.Size(145, 57)
+        Me.PicBoxCartao.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage
+        Me.PicBoxCartao.TabIndex = 5
+        Me.PicBoxCartao.TabStop = False
         '
-        'PicBox1
+        'BtnAlterarCod
         '
-        Me.PicBox1.Image = CType(resources.GetObject("PicBox1.Image"), System.Drawing.Image)
-        Me.PicBox1.Location = New System.Drawing.Point(0, 0)
-        Me.PicBox1.Name = "PicBox1"
-        Me.PicBox1.Size = New System.Drawing.Size(145, 57)
-        Me.PicBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage
-        Me.PicBox1.TabIndex = 5
-        Me.PicBox1.TabStop = False
-        '
-        'Button5
-        '
-        Me.Button5.BackColor = System.Drawing.Color.RoyalBlue
-        Me.Button5.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button5.ForeColor = System.Drawing.Color.White
-        Me.Button5.Location = New System.Drawing.Point(9, 357)
-        Me.Button5.Name = "Button5"
-        Me.Button5.Size = New System.Drawing.Size(130, 43)
-        Me.Button5.TabIndex = 4
-        Me.Button5.Text = "Definições"
-        Me.Button5.UseVisualStyleBackColor = False
+        Me.BtnAlterarCod.BackColor = System.Drawing.Color.RoyalBlue
+        Me.BtnAlterarCod.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BtnAlterarCod.ForeColor = System.Drawing.Color.White
+        Me.BtnAlterarCod.Location = New System.Drawing.Point(9, 357)
+        Me.BtnAlterarCod.Name = "BtnAlterarCod"
+        Me.BtnAlterarCod.Size = New System.Drawing.Size(130, 43)
+        Me.BtnAlterarCod.TabIndex = 4
+        Me.BtnAlterarCod.Text = "Alterar Codigo"
+        Me.BtnAlterarCod.UseVisualStyleBackColor = False
         '
         'Panel2
         '
         Me.Panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.Panel2.Controls.Add(Me.Button1)
-        Me.Panel2.Location = New System.Drawing.Point(148, -4)
+        Me.Panel2.Location = New System.Drawing.Point(148, -7)
         Me.Panel2.Name = "Panel2"
-        Me.Panel2.Size = New System.Drawing.Size(548, 418)
+        Me.Panel2.Size = New System.Drawing.Size(548, 421)
         Me.Panel2.TabIndex = 5
-        '
-        'Button1
-        '
-        Me.Button1.Location = New System.Drawing.Point(179, 129)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(75, 23)
-        Me.Button1.TabIndex = 0
-        Me.Button1.Text = "Button1"
-        Me.Button1.UseVisualStyleBackColor = True
         '
         'Form2
         '
@@ -178,9 +153,7 @@ Partial Class Form2
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Multibanco"
         Me.Panel1.ResumeLayout(False)
-        CType(Me.PixBox2, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PicBox1, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.Panel2.ResumeLayout(False)
+        CType(Me.PicBoxCartao, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
@@ -190,10 +163,8 @@ Partial Class Form2
     Friend WithEvents BtnPagamentos As Button
     Friend WithEvents BtnTransferencias As Button
     Friend WithEvents Panel1 As Panel
-    Friend WithEvents Button5 As Button
+    Friend WithEvents BtnAlterarCod As Button
     Friend WithEvents Panel2 As Panel
-    Friend WithEvents PicBox1 As PictureBox
-    Friend WithEvents PixBox2 As PictureBox
+    Friend WithEvents PicBoxCartao As PictureBox
     Friend WithEvents BtnLevantamentos As Button
-    Friend WithEvents Button1 As Button
 End Class
