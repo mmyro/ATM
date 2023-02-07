@@ -35,6 +35,7 @@ Partial Class password
         Me.TxtBox1.Font = New System.Drawing.Font("Segoe UI", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TxtBox1.Location = New System.Drawing.Point(199, 100)
         Me.TxtBox1.Name = "TxtBox1"
+        Me.TxtBox1.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
         Me.TxtBox1.Size = New System.Drawing.Size(122, 35)
         Me.TxtBox1.TabIndex = 2
         '
@@ -55,6 +56,7 @@ Partial Class password
         Me.TxtBox2.Font = New System.Drawing.Font("Segoe UI", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TxtBox2.Location = New System.Drawing.Point(199, 139)
         Me.TxtBox2.Name = "TxtBox2"
+        Me.TxtBox2.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
         Me.TxtBox2.Size = New System.Drawing.Size(122, 35)
         Me.TxtBox2.TabIndex = 4
         '
@@ -65,20 +67,20 @@ Partial Class password
         Me.LblNewPassword.ForeColor = System.Drawing.Color.White
         Me.LblNewPassword.Location = New System.Drawing.Point(42, 107)
         Me.LblNewPassword.Name = "LblNewPassword"
-        Me.LblNewPassword.Size = New System.Drawing.Size(135, 25)
+        Me.LblNewPassword.Size = New System.Drawing.Size(141, 25)
         Me.LblNewPassword.TabIndex = 5
-        Me.LblNewPassword.Text = "New password"
+        Me.LblNewPassword.Text = "Nova password"
         '
         'LblConfirmPassword
         '
         Me.LblConfirmPassword.AutoSize = True
         Me.LblConfirmPassword.Font = New System.Drawing.Font("Segoe UI", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LblConfirmPassword.ForeColor = System.Drawing.Color.White
-        Me.LblConfirmPassword.Location = New System.Drawing.Point(28, 146)
+        Me.LblConfirmPassword.Location = New System.Drawing.Point(12, 146)
         Me.LblConfirmPassword.Name = "LblConfirmPassword"
-        Me.LblConfirmPassword.Size = New System.Drawing.Size(165, 25)
+        Me.LblConfirmPassword.Size = New System.Drawing.Size(182, 25)
         Me.LblConfirmPassword.TabIndex = 6
-        Me.LblConfirmPassword.Text = "Confirm password"
+        Me.LblConfirmPassword.Text = "Confirmar password"
         '
         'BtnConfirmar
         '

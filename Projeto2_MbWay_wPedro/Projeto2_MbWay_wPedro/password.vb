@@ -4,7 +4,7 @@
             clientes(FrmLogin.User, 1) = Val(TxtBox1.Text)
             Form2.trocarPainel(Consultas)
         Else
-            MsgBox("erro")
+            MsgBox("Palavra passe não coincide!", MsgBoxStyle.Exclamation)
         End If
     End Sub
 End Class
