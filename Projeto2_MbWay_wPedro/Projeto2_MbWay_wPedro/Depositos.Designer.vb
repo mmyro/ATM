@@ -25,6 +25,7 @@ Partial Class Depositos
         Me.LblTitulo = New System.Windows.Forms.Label()
         Me.TxtDepositar = New System.Windows.Forms.TextBox()
         Me.BtnDepositar = New System.Windows.Forms.Button()
+        Me.Label1 = New System.Windows.Forms.Label()
         Me.SuspendLayout()
         '
         'LblTitulo
@@ -42,6 +43,7 @@ Partial Class Depositos
         '
         'TxtDepositar
         '
+        Me.TxtDepositar.Font = New System.Drawing.Font("Segoe UI", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TxtDepositar.Location = New System.Drawing.Point(174, 133)
         Me.TxtDepositar.Multiline = True
         Me.TxtDepositar.Name = "TxtDepositar"
@@ -52,12 +54,20 @@ Partial Class Depositos
         'BtnDepositar
         '
         Me.BtnDepositar.Font = New System.Drawing.Font("Segoe UI", 10.0!)
-        Me.BtnDepositar.Location = New System.Drawing.Point(183, 186)
+        Me.BtnDepositar.Location = New System.Drawing.Point(185, 186)
         Me.BtnDepositar.Name = "BtnDepositar"
         Me.BtnDepositar.Size = New System.Drawing.Size(151, 31)
         Me.BtnDepositar.TabIndex = 2
         Me.BtnDepositar.Text = "Depositar"
         Me.BtnDepositar.UseVisualStyleBackColor = True
+        '
+        'Label1
+        '
+        Me.Label1.BackColor = System.Drawing.Color.Black
+        Me.Label1.Location = New System.Drawing.Point(144, 109)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(235, 128)
+        Me.Label1.TabIndex = 3
         '
         'Depositos
         '
@@ -68,6 +78,7 @@ Partial Class Depositos
         Me.Controls.Add(Me.BtnDepositar)
         Me.Controls.Add(Me.TxtDepositar)
         Me.Controls.Add(Me.LblTitulo)
+        Me.Controls.Add(Me.Label1)
         Me.Name = "Depositos"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Depositos"
@@ -79,4 +90,5 @@ Partial Class Depositos
     Friend WithEvents LblTitulo As Label
     Friend WithEvents TxtDepositar As TextBox
     Friend WithEvents BtnDepositar As Button
+    Friend WithEvents Label1 As Label
 End Class
