@@ -38,7 +38,10 @@ Partial Class Form2
         '
         'BtnConsultas
         '
-        Me.BtnConsultas.BackColor = System.Drawing.Color.RoyalBlue
+        Me.BtnConsultas.BackColor = System.Drawing.Color.FromArgb(CType(CType(18, Byte), Integer), CType(CType(38, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.BtnConsultas.FlatAppearance.BorderSize = 0
+        Me.BtnConsultas.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(5, Byte), Integer), CType(CType(108, Byte), Integer), CType(CType(242, Byte), Integer))
+        Me.BtnConsultas.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.BtnConsultas.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.BtnConsultas.ForeColor = System.Drawing.Color.White
         Me.BtnConsultas.Location = New System.Drawing.Point(9, 63)
@@ -50,7 +53,10 @@ Partial Class Form2
         '
         'BtnDepositos
         '
-        Me.BtnDepositos.BackColor = System.Drawing.Color.RoyalBlue
+        Me.BtnDepositos.BackColor = System.Drawing.Color.FromArgb(CType(CType(18, Byte), Integer), CType(CType(38, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.BtnDepositos.FlatAppearance.BorderSize = 0
+        Me.BtnDepositos.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(5, Byte), Integer), CType(CType(108, Byte), Integer), CType(CType(242, Byte), Integer))
+        Me.BtnDepositos.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.BtnDepositos.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.BtnDepositos.ForeColor = System.Drawing.Color.White
         Me.BtnDepositos.Location = New System.Drawing.Point(9, 112)
@@ -62,7 +68,10 @@ Partial Class Form2
         '
         'BtnPagamentos
         '
-        Me.BtnPagamentos.BackColor = System.Drawing.Color.RoyalBlue
+        Me.BtnPagamentos.BackColor = System.Drawing.Color.FromArgb(CType(CType(18, Byte), Integer), CType(CType(38, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.BtnPagamentos.FlatAppearance.BorderSize = 0
+        Me.BtnPagamentos.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(5, Byte), Integer), CType(CType(108, Byte), Integer), CType(CType(242, Byte), Integer))
+        Me.BtnPagamentos.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.BtnPagamentos.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.BtnPagamentos.ForeColor = System.Drawing.Color.White
         Me.BtnPagamentos.Location = New System.Drawing.Point(9, 161)
@@ -74,7 +83,10 @@ Partial Class Form2
         '
         'BtnTransferencias
         '
-        Me.BtnTransferencias.BackColor = System.Drawing.Color.RoyalBlue
+        Me.BtnTransferencias.BackColor = System.Drawing.Color.FromArgb(CType(CType(18, Byte), Integer), CType(CType(38, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.BtnTransferencias.FlatAppearance.BorderSize = 0
+        Me.BtnTransferencias.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(5, Byte), Integer), CType(CType(108, Byte), Integer), CType(CType(242, Byte), Integer))
+        Me.BtnTransferencias.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.BtnTransferencias.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.BtnTransferencias.ForeColor = System.Drawing.Color.White
         Me.BtnTransferencias.Location = New System.Drawing.Point(9, 210)
@@ -100,7 +112,10 @@ Partial Class Form2
         '
         'BtnLevantamentos
         '
-        Me.BtnLevantamentos.BackColor = System.Drawing.Color.RoyalBlue
+        Me.BtnLevantamentos.BackColor = System.Drawing.Color.FromArgb(CType(CType(18, Byte), Integer), CType(CType(38, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.BtnLevantamentos.FlatAppearance.BorderSize = 0
+        Me.BtnLevantamentos.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(5, Byte), Integer), CType(CType(108, Byte), Integer), CType(CType(242, Byte), Integer))
+        Me.BtnLevantamentos.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.BtnLevantamentos.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.BtnLevantamentos.ForeColor = System.Drawing.Color.White
         Me.BtnLevantamentos.Location = New System.Drawing.Point(9, 259)
@@ -122,7 +137,10 @@ Partial Class Form2
         '
         'BtnAlterarCod
         '
-        Me.BtnAlterarCod.BackColor = System.Drawing.Color.RoyalBlue
+        Me.BtnAlterarCod.BackColor = System.Drawing.Color.FromArgb(CType(CType(18, Byte), Integer), CType(CType(38, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.BtnAlterarCod.FlatAppearance.BorderSize = 0
+        Me.BtnAlterarCod.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(5, Byte), Integer), CType(CType(108, Byte), Integer), CType(CType(242, Byte), Integer))
+        Me.BtnAlterarCod.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.BtnAlterarCod.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.BtnAlterarCod.ForeColor = System.Drawing.Color.White
         Me.BtnAlterarCod.Location = New System.Drawing.Point(9, 357)
@@ -144,7 +162,7 @@ Partial Class Form2
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.BackColor = System.Drawing.Color.RoyalBlue
+        Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(18, Byte), Integer), CType(CType(38, Byte), Integer), CType(CType(64, Byte), Integer))
         Me.ClientSize = New System.Drawing.Size(694, 414)
         Me.Controls.Add(Me.Panel2)
         Me.Controls.Add(Me.Panel1)

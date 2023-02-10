@@ -30,7 +30,6 @@ Partial Class FrmLogin
         Me.PictureBox2 = New System.Windows.Forms.PictureBox()
         Me.Panel2 = New System.Windows.Forms.Panel()
         Me.TxtBoxPassword = New System.Windows.Forms.TextBox()
-        Me.BtnEntrar = New System.Windows.Forms.Button()
         Me.Btn7 = New System.Windows.Forms.Button()
         Me.Btn9 = New System.Windows.Forms.Button()
         Me.Btn4 = New System.Windows.Forms.Button()
@@ -82,7 +81,10 @@ Partial Class FrmLogin
         '
         'TxtBoxUsername
         '
-        Me.TxtBoxUsername.Location = New System.Drawing.Point(54, 7)
+        Me.TxtBoxUsername.BackColor = System.Drawing.Color.FromArgb(CType(CType(89, Byte), Integer), CType(CType(89, Byte), Integer), CType(CType(89, Byte), Integer))
+        Me.TxtBoxUsername.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.TxtBoxUsername.ForeColor = System.Drawing.Color.White
+        Me.TxtBoxUsername.Location = New System.Drawing.Point(52, 7)
         Me.TxtBoxUsername.Name = "TxtBoxUsername"
         Me.TxtBoxUsername.ReadOnly = True
         Me.TxtBoxUsername.Size = New System.Drawing.Size(180, 29)
@@ -109,30 +111,24 @@ Partial Class FrmLogin
         '
         'TxtBoxPassword
         '
-        Me.TxtBoxPassword.Location = New System.Drawing.Point(54, 8)
+        Me.TxtBoxPassword.BackColor = System.Drawing.Color.FromArgb(CType(CType(89, Byte), Integer), CType(CType(89, Byte), Integer), CType(CType(89, Byte), Integer))
+        Me.TxtBoxPassword.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.TxtBoxPassword.ForeColor = System.Drawing.Color.White
+        Me.TxtBoxPassword.Location = New System.Drawing.Point(52, 8)
         Me.TxtBoxPassword.Name = "TxtBoxPassword"
         Me.TxtBoxPassword.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
         Me.TxtBoxPassword.ReadOnly = True
         Me.TxtBoxPassword.Size = New System.Drawing.Size(180, 29)
         Me.TxtBoxPassword.TabIndex = 3
         '
-        'BtnEntrar
-        '
-        Me.BtnEntrar.BackColor = System.Drawing.Color.DodgerBlue
-        Me.BtnEntrar.Enabled = False
-        Me.BtnEntrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.BtnEntrar.ForeColor = System.Drawing.Color.Black
-        Me.BtnEntrar.Location = New System.Drawing.Point(227, 301)
-        Me.BtnEntrar.Name = "BtnEntrar"
-        Me.BtnEntrar.Size = New System.Drawing.Size(75, 40)
-        Me.BtnEntrar.TabIndex = 4
-        Me.BtnEntrar.Text = "Entrar"
-        Me.BtnEntrar.UseVisualStyleBackColor = False
-        '
         'Btn7
         '
-        Me.Btn7.BackColor = System.Drawing.Color.DodgerBlue
+        Me.Btn7.BackColor = System.Drawing.Color.FromArgb(CType(CType(18, Byte), Integer), CType(CType(38, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.Btn7.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(5, Byte), Integer), CType(CType(108, Byte), Integer), CType(CType(242, Byte), Integer))
+        Me.Btn7.FlatAppearance.BorderSize = 2
+        Me.Btn7.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(5, Byte), Integer), CType(CType(108, Byte), Integer), CType(CType(242, Byte), Integer))
         Me.Btn7.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Btn7.ForeColor = System.Drawing.Color.FromArgb(CType(CType(174, Byte), Integer), CType(CType(181, Byte), Integer), CType(CType(191, Byte), Integer))
         Me.Btn7.Location = New System.Drawing.Point(65, 163)
         Me.Btn7.Name = "Btn7"
         Me.Btn7.Size = New System.Drawing.Size(75, 40)
@@ -142,8 +138,12 @@ Partial Class FrmLogin
         '
         'Btn9
         '
-        Me.Btn9.BackColor = System.Drawing.Color.DodgerBlue
+        Me.Btn9.BackColor = System.Drawing.Color.FromArgb(CType(CType(18, Byte), Integer), CType(CType(38, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.Btn9.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(5, Byte), Integer), CType(CType(108, Byte), Integer), CType(CType(242, Byte), Integer))
+        Me.Btn9.FlatAppearance.BorderSize = 2
+        Me.Btn9.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(5, Byte), Integer), CType(CType(108, Byte), Integer), CType(CType(242, Byte), Integer))
         Me.Btn9.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Btn9.ForeColor = System.Drawing.Color.FromArgb(CType(CType(174, Byte), Integer), CType(CType(181, Byte), Integer), CType(CType(191, Byte), Integer))
         Me.Btn9.Location = New System.Drawing.Point(227, 163)
         Me.Btn9.Name = "Btn9"
         Me.Btn9.Size = New System.Drawing.Size(75, 40)
@@ -153,8 +153,12 @@ Partial Class FrmLogin
         '
         'Btn4
         '
-        Me.Btn4.BackColor = System.Drawing.Color.DodgerBlue
+        Me.Btn4.BackColor = System.Drawing.Color.FromArgb(CType(CType(18, Byte), Integer), CType(CType(38, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.Btn4.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(5, Byte), Integer), CType(CType(108, Byte), Integer), CType(CType(242, Byte), Integer))
+        Me.Btn4.FlatAppearance.BorderSize = 2
+        Me.Btn4.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(5, Byte), Integer), CType(CType(108, Byte), Integer), CType(CType(242, Byte), Integer))
         Me.Btn4.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Btn4.ForeColor = System.Drawing.Color.FromArgb(CType(CType(174, Byte), Integer), CType(CType(181, Byte), Integer), CType(CType(191, Byte), Integer))
         Me.Btn4.Location = New System.Drawing.Point(65, 209)
         Me.Btn4.Name = "Btn4"
         Me.Btn4.Size = New System.Drawing.Size(75, 40)
@@ -164,8 +168,12 @@ Partial Class FrmLogin
         '
         'Btn8
         '
-        Me.Btn8.BackColor = System.Drawing.Color.DodgerBlue
+        Me.Btn8.BackColor = System.Drawing.Color.FromArgb(CType(CType(18, Byte), Integer), CType(CType(38, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.Btn8.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(5, Byte), Integer), CType(CType(108, Byte), Integer), CType(CType(242, Byte), Integer))
+        Me.Btn8.FlatAppearance.BorderSize = 2
+        Me.Btn8.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(5, Byte), Integer), CType(CType(108, Byte), Integer), CType(CType(242, Byte), Integer))
         Me.Btn8.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Btn8.ForeColor = System.Drawing.Color.FromArgb(CType(CType(174, Byte), Integer), CType(CType(181, Byte), Integer), CType(CType(191, Byte), Integer))
         Me.Btn8.Location = New System.Drawing.Point(146, 163)
         Me.Btn8.Name = "Btn8"
         Me.Btn8.Size = New System.Drawing.Size(75, 40)
@@ -175,8 +183,12 @@ Partial Class FrmLogin
         '
         'Btn6
         '
-        Me.Btn6.BackColor = System.Drawing.Color.DodgerBlue
+        Me.Btn6.BackColor = System.Drawing.Color.FromArgb(CType(CType(18, Byte), Integer), CType(CType(38, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.Btn6.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(5, Byte), Integer), CType(CType(108, Byte), Integer), CType(CType(242, Byte), Integer))
+        Me.Btn6.FlatAppearance.BorderSize = 2
+        Me.Btn6.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(5, Byte), Integer), CType(CType(108, Byte), Integer), CType(CType(242, Byte), Integer))
         Me.Btn6.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Btn6.ForeColor = System.Drawing.Color.FromArgb(CType(CType(174, Byte), Integer), CType(CType(181, Byte), Integer), CType(CType(191, Byte), Integer))
         Me.Btn6.Location = New System.Drawing.Point(227, 209)
         Me.Btn6.Name = "Btn6"
         Me.Btn6.Size = New System.Drawing.Size(75, 40)
@@ -186,8 +198,12 @@ Partial Class FrmLogin
         '
         'Btn3
         '
-        Me.Btn3.BackColor = System.Drawing.Color.DodgerBlue
+        Me.Btn3.BackColor = System.Drawing.Color.FromArgb(CType(CType(18, Byte), Integer), CType(CType(38, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.Btn3.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(5, Byte), Integer), CType(CType(108, Byte), Integer), CType(CType(242, Byte), Integer))
+        Me.Btn3.FlatAppearance.BorderSize = 2
+        Me.Btn3.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(5, Byte), Integer), CType(CType(108, Byte), Integer), CType(CType(242, Byte), Integer))
         Me.Btn3.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Btn3.ForeColor = System.Drawing.Color.FromArgb(CType(CType(174, Byte), Integer), CType(CType(181, Byte), Integer), CType(CType(191, Byte), Integer))
         Me.Btn3.Location = New System.Drawing.Point(227, 255)
         Me.Btn3.Name = "Btn3"
         Me.Btn3.Size = New System.Drawing.Size(75, 40)
@@ -197,8 +213,12 @@ Partial Class FrmLogin
         '
         'Btn1
         '
-        Me.Btn1.BackColor = System.Drawing.Color.DodgerBlue
+        Me.Btn1.BackColor = System.Drawing.Color.FromArgb(CType(CType(18, Byte), Integer), CType(CType(38, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.Btn1.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(5, Byte), Integer), CType(CType(108, Byte), Integer), CType(CType(242, Byte), Integer))
+        Me.Btn1.FlatAppearance.BorderSize = 2
+        Me.Btn1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(5, Byte), Integer), CType(CType(108, Byte), Integer), CType(CType(242, Byte), Integer))
         Me.Btn1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Btn1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(174, Byte), Integer), CType(CType(181, Byte), Integer), CType(CType(191, Byte), Integer))
         Me.Btn1.Location = New System.Drawing.Point(65, 255)
         Me.Btn1.Name = "Btn1"
         Me.Btn1.Size = New System.Drawing.Size(75, 40)
@@ -208,8 +228,12 @@ Partial Class FrmLogin
         '
         'Btn5
         '
-        Me.Btn5.BackColor = System.Drawing.Color.DodgerBlue
+        Me.Btn5.BackColor = System.Drawing.Color.FromArgb(CType(CType(18, Byte), Integer), CType(CType(38, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.Btn5.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(5, Byte), Integer), CType(CType(108, Byte), Integer), CType(CType(242, Byte), Integer))
+        Me.Btn5.FlatAppearance.BorderSize = 2
+        Me.Btn5.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(5, Byte), Integer), CType(CType(108, Byte), Integer), CType(CType(242, Byte), Integer))
         Me.Btn5.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Btn5.ForeColor = System.Drawing.Color.FromArgb(CType(CType(174, Byte), Integer), CType(CType(181, Byte), Integer), CType(CType(191, Byte), Integer))
         Me.Btn5.Location = New System.Drawing.Point(146, 209)
         Me.Btn5.Name = "Btn5"
         Me.Btn5.Size = New System.Drawing.Size(75, 40)
@@ -219,8 +243,12 @@ Partial Class FrmLogin
         '
         'Btn2
         '
-        Me.Btn2.BackColor = System.Drawing.Color.DodgerBlue
+        Me.Btn2.BackColor = System.Drawing.Color.FromArgb(CType(CType(18, Byte), Integer), CType(CType(38, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.Btn2.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(5, Byte), Integer), CType(CType(108, Byte), Integer), CType(CType(242, Byte), Integer))
+        Me.Btn2.FlatAppearance.BorderSize = 2
+        Me.Btn2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(5, Byte), Integer), CType(CType(108, Byte), Integer), CType(CType(242, Byte), Integer))
         Me.Btn2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Btn2.ForeColor = System.Drawing.Color.FromArgb(CType(CType(174, Byte), Integer), CType(CType(181, Byte), Integer), CType(CType(191, Byte), Integer))
         Me.Btn2.Location = New System.Drawing.Point(146, 255)
         Me.Btn2.Name = "Btn2"
         Me.Btn2.Size = New System.Drawing.Size(75, 40)
@@ -230,9 +258,13 @@ Partial Class FrmLogin
         '
         'Btn0
         '
-        Me.Btn0.BackColor = System.Drawing.Color.DodgerBlue
+        Me.Btn0.BackColor = System.Drawing.Color.FromArgb(CType(CType(18, Byte), Integer), CType(CType(38, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.Btn0.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(5, Byte), Integer), CType(CType(108, Byte), Integer), CType(CType(242, Byte), Integer))
+        Me.Btn0.FlatAppearance.BorderSize = 2
+        Me.Btn0.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(5, Byte), Integer), CType(CType(108, Byte), Integer), CType(CType(242, Byte), Integer))
         Me.Btn0.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Btn0.Location = New System.Drawing.Point(65, 301)
+        Me.Btn0.ForeColor = System.Drawing.Color.FromArgb(CType(CType(174, Byte), Integer), CType(CType(181, Byte), Integer), CType(CType(191, Byte), Integer))
+        Me.Btn0.Location = New System.Drawing.Point(146, 301)
         Me.Btn0.Name = "Btn0"
         Me.Btn0.Size = New System.Drawing.Size(75, 40)
         Me.Btn0.TabIndex = 14
@@ -241,10 +273,13 @@ Partial Class FrmLogin
         '
         'BtnOk
         '
-        Me.BtnOk.BackColor = System.Drawing.Color.DodgerBlue
+        Me.BtnOk.BackColor = System.Drawing.Color.FromArgb(CType(CType(18, Byte), Integer), CType(CType(38, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.BtnOk.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(5, Byte), Integer), CType(CType(108, Byte), Integer), CType(CType(242, Byte), Integer))
+        Me.BtnOk.FlatAppearance.BorderSize = 2
+        Me.BtnOk.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(5, Byte), Integer), CType(CType(108, Byte), Integer), CType(CType(242, Byte), Integer))
         Me.BtnOk.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.BtnOk.ForeColor = System.Drawing.Color.Black
-        Me.BtnOk.Location = New System.Drawing.Point(146, 301)
+        Me.BtnOk.ForeColor = System.Drawing.Color.FromArgb(CType(CType(174, Byte), Integer), CType(CType(181, Byte), Integer), CType(CType(191, Byte), Integer))
+        Me.BtnOk.Location = New System.Drawing.Point(227, 301)
         Me.BtnOk.Name = "BtnOk"
         Me.BtnOk.Size = New System.Drawing.Size(75, 40)
         Me.BtnOk.TabIndex = 15
@@ -253,11 +288,15 @@ Partial Class FrmLogin
         '
         'BtnLimpar
         '
-        Me.BtnLimpar.BackColor = System.Drawing.Color.DodgerBlue
+        Me.BtnLimpar.BackColor = System.Drawing.Color.FromArgb(CType(CType(18, Byte), Integer), CType(CType(38, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.BtnLimpar.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(5, Byte), Integer), CType(CType(108, Byte), Integer), CType(CType(242, Byte), Integer))
+        Me.BtnLimpar.FlatAppearance.BorderSize = 2
+        Me.BtnLimpar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(5, Byte), Integer), CType(CType(108, Byte), Integer), CType(CType(242, Byte), Integer))
         Me.BtnLimpar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.BtnLimpar.Location = New System.Drawing.Point(250, 19)
+        Me.BtnLimpar.ForeColor = System.Drawing.Color.FromArgb(CType(CType(174, Byte), Integer), CType(CType(181, Byte), Integer), CType(CType(191, Byte), Integer))
+        Me.BtnLimpar.Location = New System.Drawing.Point(65, 301)
         Me.BtnLimpar.Name = "BtnLimpar"
-        Me.BtnLimpar.Size = New System.Drawing.Size(52, 40)
+        Me.BtnLimpar.Size = New System.Drawing.Size(75, 40)
         Me.BtnLimpar.TabIndex = 16
         Me.BtnLimpar.Text = "C"
         Me.BtnLimpar.UseVisualStyleBackColor = False
@@ -266,7 +305,7 @@ Partial Class FrmLogin
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 21.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.BackColor = System.Drawing.Color.RoyalBlue
+        Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(18, Byte), Integer), CType(CType(38, Byte), Integer), CType(CType(64, Byte), Integer))
         Me.ClientSize = New System.Drawing.Size(372, 363)
         Me.Controls.Add(Me.BtnLimpar)
         Me.Controls.Add(Me.BtnOk)
@@ -280,7 +319,6 @@ Partial Class FrmLogin
         Me.Controls.Add(Me.Btn4)
         Me.Controls.Add(Me.Btn9)
         Me.Controls.Add(Me.Btn7)
-        Me.Controls.Add(Me.BtnEntrar)
         Me.Controls.Add(Me.Panel2)
         Me.Controls.Add(Me.Panel1)
         Me.Controls.Add(Me.LblLogin)
@@ -312,7 +350,6 @@ Partial Class FrmLogin
     Friend WithEvents PictureBox2 As PictureBox
     Friend WithEvents Panel2 As Panel
     Friend WithEvents TxtBoxPassword As TextBox
-    Friend WithEvents BtnEntrar As Button
     Friend WithEvents Btn7 As Button
     Friend WithEvents Btn9 As Button
     Friend WithEvents Btn4 As Button

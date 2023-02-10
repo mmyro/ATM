@@ -27,7 +27,7 @@ Partial Class Pagamentos
         '
         'LblTitulo
         '
-        Me.LblTitulo.BackColor = System.Drawing.Color.RoyalBlue
+        Me.LblTitulo.BackColor = System.Drawing.Color.FromArgb(CType(CType(18, Byte), Integer), CType(CType(38, Byte), Integer), CType(CType(64, Byte), Integer))
         Me.LblTitulo.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.LblTitulo.Font = New System.Drawing.Font("Segoe UI", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LblTitulo.ForeColor = System.Drawing.Color.White
@@ -42,7 +42,7 @@ Partial Class Pagamentos
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.BackColor = System.Drawing.Color.RoyalBlue
+        Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(18, Byte), Integer), CType(CType(38, Byte), Integer), CType(CType(64, Byte), Integer))
         Me.ClientSize = New System.Drawing.Size(532, 407)
         Me.Controls.Add(Me.LblTitulo)
         Me.Name = "Pagamentos"

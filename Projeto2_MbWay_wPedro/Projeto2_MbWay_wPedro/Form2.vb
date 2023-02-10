@@ -11,7 +11,7 @@
 
     Private Sub BtnConsultas_Click(sender As Object, e As EventArgs) Handles BtnConsultas.Click
         trocarPainel(Consultas)
-        Consultas.LblDinheiro.Text = "Saldo atual:" & vbCrLf & "-------------" & vbCrLf & clientes(Val(FrmLogin.TxtBoxUsername.Text), 0)
+        Consultas.LblDinheiro.Text = "Saldo atual:" & vbCrLf & "-------------" & vbCrLf & clientes(Val(FrmLogin.TxtBoxUsername.Text), 0) & " EUR"
     End Sub
 
     Private Sub BtnDepositos_Click(sender As Object, e As EventArgs) Handles BtnDepositos.Click
@@ -37,4 +37,5 @@
     Private Sub Form2_closed(sender As Object, e As EventArgs) Handles MyBase.Closed
         Application.Exit()
     End Sub
+
 End Class

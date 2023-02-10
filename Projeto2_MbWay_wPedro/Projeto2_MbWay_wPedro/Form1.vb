@@ -2,32 +2,9 @@
     Dim ok As Boolean = False
     Dim Tentativas As Integer = 3
     Public User As Integer
-    Private Sub BtnEntrar_Click(sender As Object, e As EventArgs) Handles BtnEntrar.Click
+    Private Sub BtnEntrar_Click(sender As Object, e As EventArgs)
         User = Val(TxtBoxUsername.Text)
         IniciarClientes()
-        If User = 99 And TxtBoxPassword.Text = "0000" Then
-            Me.Hide()
-            Form2.Show()
-            Form2.PicBoxCartao.Image = My.Resources.Admin
-        ElseIf clientes(User, 1) = Val(TxtBoxPassword.Text) Then
-            Me.Hide()
-            Form2.Show()
-            Form2.PicBoxCartao.Image = My.Resources.Clientes
-        ElseIf Tentativas = 0 Then
-            TxtBoxPassword.Clear()
-            TxtBoxUsername.Clear()
-            BtnEntrar.Enabled = False
-            Tentativas = 3
-            MsgBox("Erro apos as 3 tentataivas" & vbCrLf& & "Tente outra vez ou mais tarde!", MsgBoxStyle.Exclamation)
-            ok = False
-        Else
-            MsgBox("Password Inválida!" & vbCrLf & Tentativas & " Restantes", MsgBoxStyle.Information)
-            Tentativas -= 1
-            TxtBoxPassword.Clear()
-            BtnEntrar.Enabled = False
-        End If
-
-
     End Sub
 
     Private Sub FrmLogin_Closed(sender As Object, e As EventArgs) Handles MyBase.Closed
@@ -40,9 +17,6 @@
         ElseIf ok = True And TxtBoxPassword.Text.Length < 4 Then
             TxtBoxPassword.Text &= 0
         End If
-        If ok = True And TxtBoxPassword.TextLength = 4 Then
-            BtnEntrar.Enabled = True
-        End If
     End Sub
 
     Private Sub Btn1_Click(sender As Object, e As EventArgs) Handles Btn1.Click
@@ -50,9 +24,6 @@
             TxtBoxUsername.Text &= 1
         ElseIf ok = True And TxtBoxPassword.Text.Length < 4 Then
             TxtBoxPassword.Text &= 1
-        End If
-        If ok = True And TxtBoxPassword.TextLength = 4 Then
-            BtnEntrar.Enabled = True
         End If
     End Sub
 
@@ -62,9 +33,6 @@
         ElseIf ok = True And TxtBoxPassword.Text.Length < 4 Then
             TxtBoxPassword.Text &= 2
         End If
-        If ok = True And TxtBoxPassword.TextLength = 4 Then
-            BtnEntrar.Enabled = True
-        End If
     End Sub
 
     Private Sub Btn3_Click(sender As Object, e As EventArgs) Handles Btn3.Click
@@ -72,9 +40,6 @@
             TxtBoxUsername.Text &= 3
         ElseIf ok = True And TxtBoxPassword.Text.Length < 4 Then
             TxtBoxPassword.Text &= 3
-        End If
-        If ok = True And TxtBoxPassword.TextLength = 4 Then
-            BtnEntrar.Enabled = True
         End If
     End Sub
 
@@ -84,9 +49,6 @@
         ElseIf ok = True And TxtBoxPassword.Text.Length < 4 Then
             TxtBoxPassword.Text &= 4
         End If
-        If ok = True And TxtBoxPassword.TextLength = 4 Then
-            BtnEntrar.Enabled = True
-        End If
     End Sub
 
     Private Sub Btn5_Click(sender As Object, e As EventArgs) Handles Btn5.Click
@@ -94,9 +56,6 @@
             TxtBoxUsername.Text &= 5
         ElseIf ok = True And TxtBoxPassword.Text.Length < 4 Then
             TxtBoxPassword.Text &= 5
-        End If
-        If ok = True And TxtBoxPassword.TextLength = 4 Then
-            BtnEntrar.Enabled = True
         End If
     End Sub
 
@@ -106,9 +65,6 @@
         ElseIf ok = True And TxtBoxPassword.Text.Length < 4 Then
             TxtBoxPassword.Text &= 6
         End If
-        If ok = True And TxtBoxPassword.TextLength = 4 Then
-            BtnEntrar.Enabled = True
-        End If
     End Sub
 
     Private Sub Btn7_Click(sender As Object, e As EventArgs) Handles Btn7.Click
@@ -116,9 +72,6 @@
             TxtBoxUsername.Text &= 7
         ElseIf ok = True And TxtBoxPassword.Text.Length < 4 Then
             TxtBoxPassword.Text &= 7
-        End If
-        If ok = True And TxtBoxPassword.TextLength = 4 Then
-            BtnEntrar.Enabled = True
         End If
 
     End Sub
@@ -129,9 +82,6 @@
         ElseIf ok = True And TxtBoxPassword.Text.Length < 4 Then
             TxtBoxPassword.Text &= 8
         End If
-        If ok = True And TxtBoxPassword.TextLength = 4 Then
-            BtnEntrar.Enabled = True
-        End If
     End Sub
 
     Private Sub Btn9_Click(sender As Object, e As EventArgs) Handles Btn9.Click
@@ -140,19 +90,39 @@
         ElseIf ok = True And TxtBoxPassword.Text.Length < 4 Then
             TxtBoxPassword.Text &= 9
         End If
-        If ok = True And TxtBoxPassword.TextLength = 4 Then
-            BtnEntrar.Enabled = True
-        End If
     End Sub
 
     Private Sub BntOk_Click(sender As Object, e As EventArgs) Handles BtnOk.Click
-        Dim User As Integer = Val(TxtBoxUsername.Text)
-        If User >= 0 And User <= 6 Or User = 99 Then
-            ok = True
-
-        Else
-            MsgBox("Codigo Cliente inexistente!", MsgBoxStyle.Critical)
-            TxtBoxUsername.Text = ""
+        User = Val(TxtBoxUsername.Text)
+        IniciarClientes()
+        If ok = True Then
+            If User = 99 And TxtBoxPassword.Text = "0000" Then
+                Me.Hide()
+                Form2.Show()
+                Form2.PicBoxCartao.Image = My.Resources.Admin
+            ElseIf clientes(User, 1) = Val(TxtBoxPassword.Text) Then
+                Me.Hide()
+                Form2.Show()
+                Form2.PicBoxCartao.Image = My.Resources.Clientes
+            ElseIf Tentativas = 0 Then
+                TxtBoxPassword.Clear()
+                TxtBoxUsername.Clear()
+                Tentativas = 3
+                MsgBox("Erro apos as 3 tentataivas" & vbCrLf& & "Tente outra vez ou mais tarde!", MsgBoxStyle.Exclamation)
+                ok = False
+            Else
+                MsgBox("Password Inválida!" & vbCrLf & Tentativas & " Restantes", MsgBoxStyle.Information)
+                Tentativas -= 1
+                TxtBoxPassword.Clear()
+            End If
+        End If
+        If ok = False Then
+            If User >= 0 And User <= 6 Or User = 99 Then
+                ok = True
+            Else
+                MsgBox("Codigo Cliente inexistente!", MsgBoxStyle.Critical)
+                TxtBoxUsername.Text = ""
+            End If
         End If
     End Sub
 
