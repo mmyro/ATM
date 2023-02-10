@@ -50,7 +50,7 @@ Partial Class Depositos
         Me.LblTitulo.Name = "LblTitulo"
         Me.LblTitulo.Size = New System.Drawing.Size(220, 53)
         Me.LblTitulo.TabIndex = 0
-        Me.LblTitulo.Text = "Depostar dinheiro:"
+        Me.LblTitulo.Text = "Depostar dinheiro"
         Me.LblTitulo.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'BtnDepositar

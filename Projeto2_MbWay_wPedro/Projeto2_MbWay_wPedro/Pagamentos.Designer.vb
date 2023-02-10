@@ -22,21 +22,31 @@ Partial Class Pagamentos
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Pagamentos))
         Me.LblTitulo = New System.Windows.Forms.Label()
+        Me.LblBarra = New System.Windows.Forms.Label()
         Me.SuspendLayout()
         '
         'LblTitulo
         '
-        Me.LblTitulo.BackColor = System.Drawing.Color.FromArgb(CType(CType(18, Byte), Integer), CType(CType(38, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.LblTitulo.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.LblTitulo.FlatStyle = System.Windows.Forms.FlatStyle.Popup
         Me.LblTitulo.Font = New System.Drawing.Font("Segoe UI", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LblTitulo.ForeColor = System.Drawing.Color.White
-        Me.LblTitulo.Location = New System.Drawing.Point(12, 9)
+        Me.LblTitulo.Location = New System.Drawing.Point(-2, -2)
         Me.LblTitulo.Name = "LblTitulo"
-        Me.LblTitulo.Size = New System.Drawing.Size(217, 46)
-        Me.LblTitulo.TabIndex = 0
-        Me.LblTitulo.Text = "Os seus pagamentos:"
+        Me.LblTitulo.Size = New System.Drawing.Size(220, 53)
+        Me.LblTitulo.TabIndex = 1
+        Me.LblTitulo.Text = "Pagamentos"
         Me.LblTitulo.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'LblBarra
+        '
+        Me.LblBarra.ForeColor = System.Drawing.Color.FromArgb(CType(CType(174, Byte), Integer), CType(CType(181, Byte), Integer), CType(CType(191, Byte), Integer))
+        Me.LblBarra.Location = New System.Drawing.Point(-5, 42)
+        Me.LblBarra.Name = "LblBarra"
+        Me.LblBarra.Size = New System.Drawing.Size(566, 23)
+        Me.LblBarra.TabIndex = 32
+        Me.LblBarra.Text = resources.GetString("LblBarra.Text")
         '
         'Pagamentos
         '
@@ -44,6 +54,7 @@ Partial Class Pagamentos
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(18, Byte), Integer), CType(CType(38, Byte), Integer), CType(CType(64, Byte), Integer))
         Me.ClientSize = New System.Drawing.Size(532, 407)
+        Me.Controls.Add(Me.LblBarra)
         Me.Controls.Add(Me.LblTitulo)
         Me.Name = "Pagamentos"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
@@ -53,4 +64,5 @@ Partial Class Pagamentos
     End Sub
 
     Friend WithEvents LblTitulo As Label
+    Friend WithEvents LblBarra As Label
 End Class

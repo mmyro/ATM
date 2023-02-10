@@ -124,4 +124,15 @@
             TxtConfirm.Text &= 0
         End If
     End Sub
+
+    Private Sub BtnLimpar_Click(sender As Object, e As EventArgs) Handles BtnLimpar.Click
+        If TxtNew.Text.Length > 0 And ok = False Then
+            TxtNew.Text = TxtNew.Text.Remove(TxtNew.Text.Length - 1, 1)
+        End If
+        If TxtConfirm.Text.Length > 0 And ok = True Then
+            TxtConfirm.Text = TxtConfirm.Text.Remove(TxtConfirm.Text.Length - 1, 1)
+        ElseIf TxtConfirm.Text.Length = 0 And ok = True Then
+            ok = False
+        End If
+    End Sub
 End Class

@@ -59,6 +59,7 @@ Partial Class Definicoes
         Me.TxtBoxOldPassword.Location = New System.Drawing.Point(199, 94)
         Me.TxtBoxOldPassword.Name = "TxtBoxOldPassword"
         Me.TxtBoxOldPassword.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
+        Me.TxtBoxOldPassword.ReadOnly = True
         Me.TxtBoxOldPassword.Size = New System.Drawing.Size(122, 35)
         Me.TxtBoxOldPassword.TabIndex = 1
         '

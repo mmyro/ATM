@@ -47,7 +47,7 @@ Partial Class Consultas
         Me.LblTitulo.Name = "LblTitulo"
         Me.LblTitulo.Size = New System.Drawing.Size(220, 53)
         Me.LblTitulo.TabIndex = 2
-        Me.LblTitulo.Text = "Consultas:"
+        Me.LblTitulo.Text = "Consultas"
         Me.LblTitulo.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'Label1
