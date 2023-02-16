@@ -1,4 +1,6 @@
 ﻿Public Class Depositos
+
+    Dim ok As Boolean = False
     Private Sub BtnDepositar_Click(sender As Object, e As EventArgs) Handles BtnDepositar.Click
         clientes(FrmLogin.User, 0) += Val(TxtDepositar.Text)
         MsgBox("Depositado com sucesso")
@@ -6,7 +8,7 @@
     End Sub
 
     Private Sub Depositos_closed(sender As Object, e As EventArgs) Handles MyBase.Closed
-        Application.Exit
+        Application.Exit()
     End Sub
 
     Private Sub TxtDepositar_TextChanged(sender As Object, e As EventArgs) Handles TxtDepositar.TextChanged
@@ -15,48 +17,23 @@
         End If
     End Sub
 
-    Private Sub Btn0_Click(sender As Object, e As EventArgs) Handles Btn0.Click
-        TxtDepositar.Text &= 0
+    Private Sub password_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        AddHandler Btn0.Click, AddressOf Teclas
+        AddHandler Btn1.Click, AddressOf Teclas
+        AddHandler Btn2.Click, AddressOf Teclas
+        AddHandler Btn3.Click, AddressOf Teclas
+        AddHandler Btn4.Click, AddressOf Teclas
+        AddHandler Btn5.Click, AddressOf Teclas
+        AddHandler Btn6.Click, AddressOf Teclas
+        AddHandler Btn7.Click, AddressOf Teclas
+        AddHandler Btn8.Click, AddressOf Teclas
+        AddHandler Btn9.Click, AddressOf Teclas
     End Sub
 
-    Private Sub Btn1_Click(sender As Object, e As EventArgs) Handles Btn1.Click
-        TxtDepositar.Text &= 1
-    End Sub
-
-    Private Sub Btn2_Click(sender As Object, e As EventArgs) Handles Btn2.Click
-        TxtDepositar.Text &= 2
-    End Sub
-
-    Private Sub Btn3_Click(sender As Object, e As EventArgs) Handles Btn3.Click
-        TxtDepositar.Text &= 3
-    End Sub
-
-    Private Sub Btn4_Click(sender As Object, e As EventArgs) Handles Btn4.Click
-        TxtDepositar.Text &= 4
-    End Sub
-
-    Private Sub Btn5_Click(sender As Object, e As EventArgs) Handles Btn5.Click
-        TxtDepositar.Text &= 5
-    End Sub
-
-    Private Sub Btn6_Click(sender As Object, e As EventArgs) Handles Btn6.Click
-        TxtDepositar.Text &= 6
-    End Sub
-
-    Private Sub Btn7_Click(sender As Object, e As EventArgs) Handles Btn7.Click
-        TxtDepositar.Text &= 7
-    End Sub
-
-    Private Sub Btn8_Click(sender As Object, e As EventArgs) Handles Btn8.Click
-        TxtDepositar.Text &= 8
-    End Sub
-
-    Private Sub Btn9_Click(sender As Object, e As EventArgs) Handles Btn9.Click
-        TxtDepositar.Text &= 9
-    End Sub
-
-    Private Sub Btn00_Click(sender As Object, e As EventArgs) Handles Btn00.Click
-        TxtDepositar.Text &= 0
+    Private Sub Teclas(sender As Object, e As EventArgs)
+        If ok = False Then
+            TxtDepositar.Text &= sender.text
+        End If
     End Sub
 
     Private Sub BtnLimpar_Click(sender As Object, e As EventArgs) Handles BtnLimpar.Click

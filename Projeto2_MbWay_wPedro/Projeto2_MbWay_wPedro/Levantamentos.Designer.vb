@@ -148,10 +148,10 @@ Partial Class Levantamentos
         '
         'TxtBosDinheiro
         '
-        Me.TxtBosDinheiro.Font = New System.Drawing.Font("Segoe UI", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TxtBosDinheiro.Font = New System.Drawing.Font("Segoe UI", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TxtBosDinheiro.Location = New System.Drawing.Point(140, 252)
         Me.TxtBosDinheiro.Name = "TxtBosDinheiro"
-        Me.TxtBosDinheiro.Size = New System.Drawing.Size(237, 35)
+        Me.TxtBosDinheiro.Size = New System.Drawing.Size(237, 33)
         Me.TxtBosDinheiro.TabIndex = 58
         '
         'BtnLevantar

@@ -71,11 +71,11 @@ Partial Class Depositos
         'TxtDepositar
         '
         Me.TxtDepositar.Font = New System.Drawing.Font("Segoe UI", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TxtDepositar.Location = New System.Drawing.Point(143, 86)
+        Me.TxtDepositar.Location = New System.Drawing.Point(143, 106)
         Me.TxtDepositar.Multiline = True
         Me.TxtDepositar.Name = "TxtDepositar"
         Me.TxtDepositar.ReadOnly = True
-        Me.TxtDepositar.Size = New System.Drawing.Size(237, 47)
+        Me.TxtDepositar.Size = New System.Drawing.Size(237, 33)
         Me.TxtDepositar.TabIndex = 3
         Me.TxtDepositar.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
@@ -88,7 +88,7 @@ Partial Class Depositos
         Me.BtnLimpar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.BtnLimpar.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.BtnLimpar.ForeColor = System.Drawing.Color.FromArgb(CType(CType(174, Byte), Integer), CType(CType(181, Byte), Integer), CType(CType(191, Byte), Integer))
-        Me.BtnLimpar.Location = New System.Drawing.Point(143, 287)
+        Me.BtnLimpar.Location = New System.Drawing.Point(143, 282)
         Me.BtnLimpar.Name = "BtnLimpar"
         Me.BtnLimpar.Size = New System.Drawing.Size(75, 40)
         Me.BtnLimpar.TabIndex = 28
@@ -104,7 +104,7 @@ Partial Class Depositos
         Me.Btn0.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Btn0.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Btn0.ForeColor = System.Drawing.Color.FromArgb(CType(CType(174, Byte), Integer), CType(CType(181, Byte), Integer), CType(CType(191, Byte), Integer))
-        Me.Btn0.Location = New System.Drawing.Point(224, 288)
+        Me.Btn0.Location = New System.Drawing.Point(224, 283)
         Me.Btn0.Name = "Btn0"
         Me.Btn0.Size = New System.Drawing.Size(75, 40)
         Me.Btn0.TabIndex = 26
@@ -120,7 +120,7 @@ Partial Class Depositos
         Me.Btn2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Btn2.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Btn2.ForeColor = System.Drawing.Color.FromArgb(CType(CType(174, Byte), Integer), CType(CType(181, Byte), Integer), CType(CType(191, Byte), Integer))
-        Me.Btn2.Location = New System.Drawing.Point(224, 242)
+        Me.Btn2.Location = New System.Drawing.Point(224, 237)
         Me.Btn2.Name = "Btn2"
         Me.Btn2.Size = New System.Drawing.Size(75, 40)
         Me.Btn2.TabIndex = 25
@@ -136,7 +136,7 @@ Partial Class Depositos
         Me.Btn5.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Btn5.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Btn5.ForeColor = System.Drawing.Color.FromArgb(CType(CType(174, Byte), Integer), CType(CType(181, Byte), Integer), CType(CType(191, Byte), Integer))
-        Me.Btn5.Location = New System.Drawing.Point(224, 196)
+        Me.Btn5.Location = New System.Drawing.Point(224, 191)
         Me.Btn5.Name = "Btn5"
         Me.Btn5.Size = New System.Drawing.Size(75, 40)
         Me.Btn5.TabIndex = 24
@@ -152,7 +152,7 @@ Partial Class Depositos
         Me.Btn1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Btn1.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Btn1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(174, Byte), Integer), CType(CType(181, Byte), Integer), CType(CType(191, Byte), Integer))
-        Me.Btn1.Location = New System.Drawing.Point(143, 242)
+        Me.Btn1.Location = New System.Drawing.Point(143, 237)
         Me.Btn1.Name = "Btn1"
         Me.Btn1.Size = New System.Drawing.Size(75, 40)
         Me.Btn1.TabIndex = 23
@@ -168,7 +168,7 @@ Partial Class Depositos
         Me.Btn3.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Btn3.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Btn3.ForeColor = System.Drawing.Color.FromArgb(CType(CType(174, Byte), Integer), CType(CType(181, Byte), Integer), CType(CType(191, Byte), Integer))
-        Me.Btn3.Location = New System.Drawing.Point(305, 242)
+        Me.Btn3.Location = New System.Drawing.Point(305, 237)
         Me.Btn3.Name = "Btn3"
         Me.Btn3.Size = New System.Drawing.Size(75, 40)
         Me.Btn3.TabIndex = 22
@@ -184,7 +184,7 @@ Partial Class Depositos
         Me.Btn6.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Btn6.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Btn6.ForeColor = System.Drawing.Color.FromArgb(CType(CType(174, Byte), Integer), CType(CType(181, Byte), Integer), CType(CType(191, Byte), Integer))
-        Me.Btn6.Location = New System.Drawing.Point(305, 196)
+        Me.Btn6.Location = New System.Drawing.Point(305, 191)
         Me.Btn6.Name = "Btn6"
         Me.Btn6.Size = New System.Drawing.Size(75, 40)
         Me.Btn6.TabIndex = 21
@@ -200,7 +200,7 @@ Partial Class Depositos
         Me.Btn8.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Btn8.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Btn8.ForeColor = System.Drawing.Color.FromArgb(CType(CType(174, Byte), Integer), CType(CType(181, Byte), Integer), CType(CType(191, Byte), Integer))
-        Me.Btn8.Location = New System.Drawing.Point(224, 150)
+        Me.Btn8.Location = New System.Drawing.Point(224, 145)
         Me.Btn8.Name = "Btn8"
         Me.Btn8.Size = New System.Drawing.Size(75, 40)
         Me.Btn8.TabIndex = 20
@@ -216,7 +216,7 @@ Partial Class Depositos
         Me.Btn4.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Btn4.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Btn4.ForeColor = System.Drawing.Color.FromArgb(CType(CType(174, Byte), Integer), CType(CType(181, Byte), Integer), CType(CType(191, Byte), Integer))
-        Me.Btn4.Location = New System.Drawing.Point(143, 196)
+        Me.Btn4.Location = New System.Drawing.Point(143, 191)
         Me.Btn4.Name = "Btn4"
         Me.Btn4.Size = New System.Drawing.Size(75, 40)
         Me.Btn4.TabIndex = 19
@@ -232,7 +232,7 @@ Partial Class Depositos
         Me.Btn9.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Btn9.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Btn9.ForeColor = System.Drawing.Color.FromArgb(CType(CType(174, Byte), Integer), CType(CType(181, Byte), Integer), CType(CType(191, Byte), Integer))
-        Me.Btn9.Location = New System.Drawing.Point(305, 150)
+        Me.Btn9.Location = New System.Drawing.Point(305, 145)
         Me.Btn9.Name = "Btn9"
         Me.Btn9.Size = New System.Drawing.Size(75, 40)
         Me.Btn9.TabIndex = 18
@@ -248,7 +248,7 @@ Partial Class Depositos
         Me.Btn7.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Btn7.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Btn7.ForeColor = System.Drawing.Color.FromArgb(CType(CType(174, Byte), Integer), CType(CType(181, Byte), Integer), CType(CType(191, Byte), Integer))
-        Me.Btn7.Location = New System.Drawing.Point(143, 150)
+        Me.Btn7.Location = New System.Drawing.Point(143, 145)
         Me.Btn7.Name = "Btn7"
         Me.Btn7.Size = New System.Drawing.Size(75, 40)
         Me.Btn7.TabIndex = 17
@@ -264,7 +264,7 @@ Partial Class Depositos
         Me.Btn00.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Btn00.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Btn00.ForeColor = System.Drawing.Color.FromArgb(CType(CType(174, Byte), Integer), CType(CType(181, Byte), Integer), CType(CType(191, Byte), Integer))
-        Me.Btn00.Location = New System.Drawing.Point(305, 287)
+        Me.Btn00.Location = New System.Drawing.Point(305, 282)
         Me.Btn00.Name = "Btn00"
         Me.Btn00.Size = New System.Drawing.Size(75, 40)
         Me.Btn00.TabIndex = 29

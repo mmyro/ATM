@@ -29,7 +29,7 @@ Partial Class Definicoes
         Me.LblOldPassword = New System.Windows.Forms.Label()
         Me.BtnCancel = New System.Windows.Forms.Button()
         Me.LblBarra = New System.Windows.Forms.Label()
-        Me.Btn00 = New System.Windows.Forms.Button()
+        Me.BtnOk = New System.Windows.Forms.Button()
         Me.BtnLimpar = New System.Windows.Forms.Button()
         Me.Btn0 = New System.Windows.Forms.Button()
         Me.Btn2 = New System.Windows.Forms.Button()
@@ -56,12 +56,12 @@ Partial Class Definicoes
         '
         'TxtBoxOldPassword
         '
-        Me.TxtBoxOldPassword.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TxtBoxOldPassword.Location = New System.Drawing.Point(140, 115)
+        Me.TxtBoxOldPassword.Font = New System.Drawing.Font("Segoe UI", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TxtBoxOldPassword.Location = New System.Drawing.Point(140, 111)
         Me.TxtBoxOldPassword.Name = "TxtBoxOldPassword"
         Me.TxtBoxOldPassword.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
         Me.TxtBoxOldPassword.ReadOnly = True
-        Me.TxtBoxOldPassword.Size = New System.Drawing.Size(237, 29)
+        Me.TxtBoxOldPassword.Size = New System.Drawing.Size(237, 33)
         Me.TxtBoxOldPassword.TabIndex = 1
         '
         'BtnNext
@@ -83,7 +83,7 @@ Partial Class Definicoes
         Me.LblOldPassword.AutoSize = True
         Me.LblOldPassword.Font = New System.Drawing.Font("Segoe UI", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LblOldPassword.ForeColor = System.Drawing.Color.White
-        Me.LblOldPassword.Location = New System.Drawing.Point(135, 87)
+        Me.LblOldPassword.Location = New System.Drawing.Point(135, 83)
         Me.LblOldPassword.Name = "LblOldPassword"
         Me.LblOldPassword.Size = New System.Drawing.Size(138, 25)
         Me.LblOldPassword.TabIndex = 6
@@ -112,21 +112,21 @@ Partial Class Definicoes
         Me.LblBarra.TabIndex = 32
         Me.LblBarra.Text = resources.GetString("LblBarra.Text")
         '
-        'Btn00
+        'BtnOk
         '
-        Me.Btn00.BackColor = System.Drawing.Color.FromArgb(CType(CType(18, Byte), Integer), CType(CType(38, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.Btn00.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(5, Byte), Integer), CType(CType(108, Byte), Integer), CType(CType(242, Byte), Integer))
-        Me.Btn00.FlatAppearance.BorderSize = 2
-        Me.Btn00.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(5, Byte), Integer), CType(CType(108, Byte), Integer), CType(CType(242, Byte), Integer))
-        Me.Btn00.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Btn00.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Btn00.ForeColor = System.Drawing.Color.FromArgb(CType(CType(174, Byte), Integer), CType(CType(181, Byte), Integer), CType(CType(191, Byte), Integer))
-        Me.Btn00.Location = New System.Drawing.Point(302, 288)
-        Me.Btn00.Name = "Btn00"
-        Me.Btn00.Size = New System.Drawing.Size(75, 40)
-        Me.Btn00.TabIndex = 55
-        Me.Btn00.Text = "00"
-        Me.Btn00.UseVisualStyleBackColor = False
+        Me.BtnOk.BackColor = System.Drawing.Color.FromArgb(CType(CType(18, Byte), Integer), CType(CType(38, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.BtnOk.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(5, Byte), Integer), CType(CType(108, Byte), Integer), CType(CType(242, Byte), Integer))
+        Me.BtnOk.FlatAppearance.BorderSize = 2
+        Me.BtnOk.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(5, Byte), Integer), CType(CType(108, Byte), Integer), CType(CType(242, Byte), Integer))
+        Me.BtnOk.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.BtnOk.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BtnOk.ForeColor = System.Drawing.Color.FromArgb(CType(CType(174, Byte), Integer), CType(CType(181, Byte), Integer), CType(CType(191, Byte), Integer))
+        Me.BtnOk.Location = New System.Drawing.Point(302, 288)
+        Me.BtnOk.Name = "BtnOk"
+        Me.BtnOk.Size = New System.Drawing.Size(75, 40)
+        Me.BtnOk.TabIndex = 55
+        Me.BtnOk.Text = "Ok"
+        Me.BtnOk.UseVisualStyleBackColor = False
         '
         'BtnLimpar
         '
@@ -310,7 +310,7 @@ Partial Class Definicoes
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(18, Byte), Integer), CType(CType(38, Byte), Integer), CType(CType(64, Byte), Integer))
         Me.ClientSize = New System.Drawing.Size(532, 407)
-        Me.Controls.Add(Me.Btn00)
+        Me.Controls.Add(Me.BtnOk)
         Me.Controls.Add(Me.BtnLimpar)
         Me.Controls.Add(Me.Btn0)
         Me.Controls.Add(Me.Btn2)
@@ -344,7 +344,7 @@ Partial Class Definicoes
     Friend WithEvents LblOldPassword As Label
     Friend WithEvents BtnCancel As Button
     Friend WithEvents LblBarra As Label
-    Friend WithEvents Btn00 As Button
+    Friend WithEvents BtnOk As Button
     Friend WithEvents BtnLimpar As Button
     Friend WithEvents Btn0 As Button
     Friend WithEvents Btn2 As Button

@@ -30,7 +30,7 @@ Partial Class password
         Me.LblConfirmPassword = New System.Windows.Forms.Label()
         Me.BtnConfirmar = New System.Windows.Forms.Button()
         Me.LblBarra = New System.Windows.Forms.Label()
-        Me.Btn00 = New System.Windows.Forms.Button()
+        Me.BtnOk = New System.Windows.Forms.Button()
         Me.BtnLimpar = New System.Windows.Forms.Button()
         Me.Btn0 = New System.Windows.Forms.Button()
         Me.Btn2 = New System.Windows.Forms.Button()
@@ -46,12 +46,12 @@ Partial Class password
         '
         'TxtNew
         '
-        Me.TxtNew.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TxtNew.Location = New System.Drawing.Point(139, 90)
+        Me.TxtNew.Font = New System.Drawing.Font("Segoe UI", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TxtNew.Location = New System.Drawing.Point(139, 86)
         Me.TxtNew.Name = "TxtNew"
         Me.TxtNew.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
         Me.TxtNew.ReadOnly = True
-        Me.TxtNew.Size = New System.Drawing.Size(237, 29)
+        Me.TxtNew.Size = New System.Drawing.Size(237, 33)
         Me.TxtNew.TabIndex = 2
         '
         'LblTitulo
@@ -67,12 +67,12 @@ Partial Class password
         '
         'TxtConfirm
         '
-        Me.TxtConfirm.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TxtConfirm.Font = New System.Drawing.Font("Segoe UI", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TxtConfirm.Location = New System.Drawing.Point(139, 150)
         Me.TxtConfirm.Name = "TxtConfirm"
         Me.TxtConfirm.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
         Me.TxtConfirm.ReadOnly = True
-        Me.TxtConfirm.Size = New System.Drawing.Size(237, 29)
+        Me.TxtConfirm.Size = New System.Drawing.Size(237, 33)
         Me.TxtConfirm.TabIndex = 4
         '
         'LblNewPassword
@@ -80,7 +80,7 @@ Partial Class password
         Me.LblNewPassword.AutoSize = True
         Me.LblNewPassword.Font = New System.Drawing.Font("Segoe UI", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LblNewPassword.ForeColor = System.Drawing.Color.White
-        Me.LblNewPassword.Location = New System.Drawing.Point(134, 62)
+        Me.LblNewPassword.Location = New System.Drawing.Point(134, 58)
         Me.LblNewPassword.Name = "LblNewPassword"
         Me.LblNewPassword.Size = New System.Drawing.Size(141, 25)
         Me.LblNewPassword.TabIndex = 5
@@ -120,21 +120,21 @@ Partial Class password
         Me.LblBarra.TabIndex = 31
         Me.LblBarra.Text = resources.GetString("LblBarra.Text")
         '
-        'Btn00
+        'BtnOk
         '
-        Me.Btn00.BackColor = System.Drawing.Color.FromArgb(CType(CType(18, Byte), Integer), CType(CType(38, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.Btn00.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(5, Byte), Integer), CType(CType(108, Byte), Integer), CType(CType(242, Byte), Integer))
-        Me.Btn00.FlatAppearance.BorderSize = 2
-        Me.Btn00.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(5, Byte), Integer), CType(CType(108, Byte), Integer), CType(CType(242, Byte), Integer))
-        Me.Btn00.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Btn00.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Btn00.ForeColor = System.Drawing.Color.FromArgb(CType(CType(174, Byte), Integer), CType(CType(181, Byte), Integer), CType(CType(191, Byte), Integer))
-        Me.Btn00.Location = New System.Drawing.Point(301, 321)
-        Me.Btn00.Name = "Btn00"
-        Me.Btn00.Size = New System.Drawing.Size(75, 40)
-        Me.Btn00.TabIndex = 43
-        Me.Btn00.Text = "00"
-        Me.Btn00.UseVisualStyleBackColor = False
+        Me.BtnOk.BackColor = System.Drawing.Color.FromArgb(CType(CType(18, Byte), Integer), CType(CType(38, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.BtnOk.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(5, Byte), Integer), CType(CType(108, Byte), Integer), CType(CType(242, Byte), Integer))
+        Me.BtnOk.FlatAppearance.BorderSize = 2
+        Me.BtnOk.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(5, Byte), Integer), CType(CType(108, Byte), Integer), CType(CType(242, Byte), Integer))
+        Me.BtnOk.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.BtnOk.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BtnOk.ForeColor = System.Drawing.Color.FromArgb(CType(CType(174, Byte), Integer), CType(CType(181, Byte), Integer), CType(CType(191, Byte), Integer))
+        Me.BtnOk.Location = New System.Drawing.Point(301, 326)
+        Me.BtnOk.Name = "BtnOk"
+        Me.BtnOk.Size = New System.Drawing.Size(75, 40)
+        Me.BtnOk.TabIndex = 43
+        Me.BtnOk.Text = "Ok"
+        Me.BtnOk.UseVisualStyleBackColor = False
         '
         'BtnLimpar
         '
@@ -145,7 +145,7 @@ Partial Class password
         Me.BtnLimpar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.BtnLimpar.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.BtnLimpar.ForeColor = System.Drawing.Color.FromArgb(CType(CType(174, Byte), Integer), CType(CType(181, Byte), Integer), CType(CType(191, Byte), Integer))
-        Me.BtnLimpar.Location = New System.Drawing.Point(139, 320)
+        Me.BtnLimpar.Location = New System.Drawing.Point(139, 326)
         Me.BtnLimpar.Name = "BtnLimpar"
         Me.BtnLimpar.Size = New System.Drawing.Size(75, 40)
         Me.BtnLimpar.TabIndex = 42
@@ -161,7 +161,7 @@ Partial Class password
         Me.Btn0.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Btn0.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Btn0.ForeColor = System.Drawing.Color.FromArgb(CType(CType(174, Byte), Integer), CType(CType(181, Byte), Integer), CType(CType(191, Byte), Integer))
-        Me.Btn0.Location = New System.Drawing.Point(220, 321)
+        Me.Btn0.Location = New System.Drawing.Point(220, 326)
         Me.Btn0.Name = "Btn0"
         Me.Btn0.Size = New System.Drawing.Size(75, 40)
         Me.Btn0.TabIndex = 41
@@ -177,7 +177,7 @@ Partial Class password
         Me.Btn2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Btn2.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Btn2.ForeColor = System.Drawing.Color.FromArgb(CType(CType(174, Byte), Integer), CType(CType(181, Byte), Integer), CType(CType(191, Byte), Integer))
-        Me.Btn2.Location = New System.Drawing.Point(220, 275)
+        Me.Btn2.Location = New System.Drawing.Point(220, 280)
         Me.Btn2.Name = "Btn2"
         Me.Btn2.Size = New System.Drawing.Size(75, 40)
         Me.Btn2.TabIndex = 40
@@ -193,7 +193,7 @@ Partial Class password
         Me.Btn5.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Btn5.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Btn5.ForeColor = System.Drawing.Color.FromArgb(CType(CType(174, Byte), Integer), CType(CType(181, Byte), Integer), CType(CType(191, Byte), Integer))
-        Me.Btn5.Location = New System.Drawing.Point(220, 229)
+        Me.Btn5.Location = New System.Drawing.Point(220, 235)
         Me.Btn5.Name = "Btn5"
         Me.Btn5.Size = New System.Drawing.Size(75, 40)
         Me.Btn5.TabIndex = 39
@@ -209,7 +209,7 @@ Partial Class password
         Me.Btn1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Btn1.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Btn1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(174, Byte), Integer), CType(CType(181, Byte), Integer), CType(CType(191, Byte), Integer))
-        Me.Btn1.Location = New System.Drawing.Point(139, 275)
+        Me.Btn1.Location = New System.Drawing.Point(139, 280)
         Me.Btn1.Name = "Btn1"
         Me.Btn1.Size = New System.Drawing.Size(75, 40)
         Me.Btn1.TabIndex = 38
@@ -225,7 +225,7 @@ Partial Class password
         Me.Btn3.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Btn3.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Btn3.ForeColor = System.Drawing.Color.FromArgb(CType(CType(174, Byte), Integer), CType(CType(181, Byte), Integer), CType(CType(191, Byte), Integer))
-        Me.Btn3.Location = New System.Drawing.Point(301, 275)
+        Me.Btn3.Location = New System.Drawing.Point(301, 280)
         Me.Btn3.Name = "Btn3"
         Me.Btn3.Size = New System.Drawing.Size(75, 40)
         Me.Btn3.TabIndex = 37
@@ -241,7 +241,7 @@ Partial Class password
         Me.Btn6.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Btn6.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Btn6.ForeColor = System.Drawing.Color.FromArgb(CType(CType(174, Byte), Integer), CType(CType(181, Byte), Integer), CType(CType(191, Byte), Integer))
-        Me.Btn6.Location = New System.Drawing.Point(301, 229)
+        Me.Btn6.Location = New System.Drawing.Point(301, 235)
         Me.Btn6.Name = "Btn6"
         Me.Btn6.Size = New System.Drawing.Size(75, 40)
         Me.Btn6.TabIndex = 36
@@ -257,7 +257,7 @@ Partial Class password
         Me.Btn8.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Btn8.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Btn8.ForeColor = System.Drawing.Color.FromArgb(CType(CType(174, Byte), Integer), CType(CType(181, Byte), Integer), CType(CType(191, Byte), Integer))
-        Me.Btn8.Location = New System.Drawing.Point(220, 183)
+        Me.Btn8.Location = New System.Drawing.Point(220, 189)
         Me.Btn8.Name = "Btn8"
         Me.Btn8.Size = New System.Drawing.Size(75, 40)
         Me.Btn8.TabIndex = 35
@@ -273,7 +273,7 @@ Partial Class password
         Me.Btn4.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Btn4.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Btn4.ForeColor = System.Drawing.Color.FromArgb(CType(CType(174, Byte), Integer), CType(CType(181, Byte), Integer), CType(CType(191, Byte), Integer))
-        Me.Btn4.Location = New System.Drawing.Point(139, 229)
+        Me.Btn4.Location = New System.Drawing.Point(139, 235)
         Me.Btn4.Name = "Btn4"
         Me.Btn4.Size = New System.Drawing.Size(75, 40)
         Me.Btn4.TabIndex = 34
@@ -289,7 +289,7 @@ Partial Class password
         Me.Btn9.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Btn9.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Btn9.ForeColor = System.Drawing.Color.FromArgb(CType(CType(174, Byte), Integer), CType(CType(181, Byte), Integer), CType(CType(191, Byte), Integer))
-        Me.Btn9.Location = New System.Drawing.Point(301, 183)
+        Me.Btn9.Location = New System.Drawing.Point(301, 189)
         Me.Btn9.Name = "Btn9"
         Me.Btn9.Size = New System.Drawing.Size(75, 40)
         Me.Btn9.TabIndex = 33
@@ -305,7 +305,7 @@ Partial Class password
         Me.Btn7.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Btn7.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Btn7.ForeColor = System.Drawing.Color.FromArgb(CType(CType(174, Byte), Integer), CType(CType(181, Byte), Integer), CType(CType(191, Byte), Integer))
-        Me.Btn7.Location = New System.Drawing.Point(139, 183)
+        Me.Btn7.Location = New System.Drawing.Point(139, 189)
         Me.Btn7.Name = "Btn7"
         Me.Btn7.Size = New System.Drawing.Size(75, 40)
         Me.Btn7.TabIndex = 32
@@ -318,7 +318,7 @@ Partial Class password
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(18, Byte), Integer), CType(CType(38, Byte), Integer), CType(CType(64, Byte), Integer))
         Me.ClientSize = New System.Drawing.Size(532, 407)
-        Me.Controls.Add(Me.Btn00)
+        Me.Controls.Add(Me.BtnOk)
         Me.Controls.Add(Me.BtnLimpar)
         Me.Controls.Add(Me.Btn0)
         Me.Controls.Add(Me.Btn2)
@@ -353,7 +353,7 @@ Partial Class password
     Friend WithEvents LblConfirmPassword As Label
     Friend WithEvents BtnConfirmar As Button
     Friend WithEvents LblBarra As Label
-    Friend WithEvents Btn00 As Button
+    Friend WithEvents BtnOk As Button
     Friend WithEvents BtnLimpar As Button
     Friend WithEvents Btn0 As Button
     Friend WithEvents Btn2 As Button

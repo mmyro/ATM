@@ -27,10 +27,10 @@ Partial Class Transferencias
         Me.LblBarra = New System.Windows.Forms.Label()
         Me.LblNmrConta = New System.Windows.Forms.Label()
         Me.LblMontante = New System.Windows.Forms.Label()
-        Me.TxtBoxNmeConta = New System.Windows.Forms.TextBox()
+        Me.TxtBoxNmrConta = New System.Windows.Forms.TextBox()
         Me.TxtBoxMontante = New System.Windows.Forms.TextBox()
         Me.BtnConfirmar = New System.Windows.Forms.Button()
-        Me.Btn00 = New System.Windows.Forms.Button()
+        Me.BtnOk = New System.Windows.Forms.Button()
         Me.BtnLimpar = New System.Windows.Forms.Button()
         Me.Btn0 = New System.Windows.Forms.Button()
         Me.Btn2 = New System.Windows.Forms.Button()
@@ -86,14 +86,14 @@ Partial Class Transferencias
         Me.LblMontante.TabIndex = 36
         Me.LblMontante.Text = "Montante"
         '
-        'TxtBoxNmeConta
+        'TxtBoxNmrConta
         '
-        Me.TxtBoxNmeConta.Font = New System.Drawing.Font("Segoe UI", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TxtBoxNmeConta.Location = New System.Drawing.Point(137, 81)
-        Me.TxtBoxNmeConta.Name = "TxtBoxNmeConta"
-        Me.TxtBoxNmeConta.ReadOnly = True
-        Me.TxtBoxNmeConta.Size = New System.Drawing.Size(239, 33)
-        Me.TxtBoxNmeConta.TabIndex = 37
+        Me.TxtBoxNmrConta.Font = New System.Drawing.Font("Segoe UI", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TxtBoxNmrConta.Location = New System.Drawing.Point(137, 81)
+        Me.TxtBoxNmrConta.Name = "TxtBoxNmrConta"
+        Me.TxtBoxNmrConta.ReadOnly = True
+        Me.TxtBoxNmrConta.Size = New System.Drawing.Size(239, 33)
+        Me.TxtBoxNmrConta.TabIndex = 37
         '
         'TxtBoxMontante
         '
@@ -118,21 +118,21 @@ Partial Class Transferencias
         Me.BtnConfirmar.Text = "Confirmar"
         Me.BtnConfirmar.UseVisualStyleBackColor = False
         '
-        'Btn00
+        'BtnOk
         '
-        Me.Btn00.BackColor = System.Drawing.Color.FromArgb(CType(CType(18, Byte), Integer), CType(CType(38, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.Btn00.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(5, Byte), Integer), CType(CType(108, Byte), Integer), CType(CType(242, Byte), Integer))
-        Me.Btn00.FlatAppearance.BorderSize = 2
-        Me.Btn00.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(5, Byte), Integer), CType(CType(108, Byte), Integer), CType(CType(242, Byte), Integer))
-        Me.Btn00.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Btn00.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Btn00.ForeColor = System.Drawing.Color.FromArgb(CType(CType(174, Byte), Integer), CType(CType(181, Byte), Integer), CType(CType(191, Byte), Integer))
-        Me.Btn00.Location = New System.Drawing.Point(301, 322)
-        Me.Btn00.Name = "Btn00"
-        Me.Btn00.Size = New System.Drawing.Size(75, 40)
-        Me.Btn00.TabIndex = 67
-        Me.Btn00.Text = "00"
-        Me.Btn00.UseVisualStyleBackColor = False
+        Me.BtnOk.BackColor = System.Drawing.Color.FromArgb(CType(CType(18, Byte), Integer), CType(CType(38, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.BtnOk.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(5, Byte), Integer), CType(CType(108, Byte), Integer), CType(CType(242, Byte), Integer))
+        Me.BtnOk.FlatAppearance.BorderSize = 2
+        Me.BtnOk.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(5, Byte), Integer), CType(CType(108, Byte), Integer), CType(CType(242, Byte), Integer))
+        Me.BtnOk.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.BtnOk.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BtnOk.ForeColor = System.Drawing.Color.FromArgb(CType(CType(174, Byte), Integer), CType(CType(181, Byte), Integer), CType(CType(191, Byte), Integer))
+        Me.BtnOk.Location = New System.Drawing.Point(301, 322)
+        Me.BtnOk.Name = "BtnOk"
+        Me.BtnOk.Size = New System.Drawing.Size(75, 40)
+        Me.BtnOk.TabIndex = 67
+        Me.BtnOk.Text = "Ok"
+        Me.BtnOk.UseVisualStyleBackColor = False
         '
         'BtnLimpar
         '
@@ -316,7 +316,7 @@ Partial Class Transferencias
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(18, Byte), Integer), CType(CType(38, Byte), Integer), CType(CType(64, Byte), Integer))
         Me.ClientSize = New System.Drawing.Size(532, 407)
-        Me.Controls.Add(Me.Btn00)
+        Me.Controls.Add(Me.BtnOk)
         Me.Controls.Add(Me.BtnLimpar)
         Me.Controls.Add(Me.Btn0)
         Me.Controls.Add(Me.Btn2)
@@ -330,7 +330,7 @@ Partial Class Transferencias
         Me.Controls.Add(Me.Btn7)
         Me.Controls.Add(Me.BtnConfirmar)
         Me.Controls.Add(Me.TxtBoxMontante)
-        Me.Controls.Add(Me.TxtBoxNmeConta)
+        Me.Controls.Add(Me.TxtBoxNmrConta)
         Me.Controls.Add(Me.LblMontante)
         Me.Controls.Add(Me.LblNmrConta)
         Me.Controls.Add(Me.LblBarra)
@@ -347,10 +347,10 @@ Partial Class Transferencias
     Friend WithEvents LblBarra As Label
     Friend WithEvents LblNmrConta As Label
     Friend WithEvents LblMontante As Label
-    Friend WithEvents TxtBoxNmeConta As TextBox
+    Friend WithEvents TxtBoxNmrConta As TextBox
     Friend WithEvents TxtBoxMontante As TextBox
     Friend WithEvents BtnConfirmar As Button
-    Friend WithEvents Btn00 As Button
+    Friend WithEvents BtnOk As Button
     Friend WithEvents BtnLimpar As Button
     Friend WithEvents Btn0 As Button
     Friend WithEvents Btn2 As Button

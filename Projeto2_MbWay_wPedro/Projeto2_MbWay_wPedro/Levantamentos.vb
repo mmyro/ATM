@@ -63,4 +63,8 @@
             Nota()
         End If
     End Sub
+
+    Private Sub TxtBosDinheiro_TextChanged(sender As Object, e As EventArgs) Handles TxtBosDinheiro.TextChanged
+
+    End Sub
 End Class
