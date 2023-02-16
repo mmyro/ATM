@@ -38,4 +38,7 @@
         Application.Exit()
     End Sub
 
+    Private Sub BtnSair_Click(sender As Object, e As EventArgs) Handles BtnSair.Click
+        Me.Close()
+    End Sub
 End Class

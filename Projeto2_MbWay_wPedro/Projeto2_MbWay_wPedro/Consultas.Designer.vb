@@ -30,7 +30,7 @@ Partial Class Consultas
         '
         'LblDinheiro
         '
-        Me.LblDinheiro.Font = New System.Drawing.Font("Segoe UI", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.LblDinheiro.Font = New System.Drawing.Font("Segoe UI", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LblDinheiro.ForeColor = System.Drawing.Color.White
         Me.LblDinheiro.Location = New System.Drawing.Point(65, 85)
         Me.LblDinheiro.Name = "LblDinheiro"

@@ -50,7 +50,7 @@ Partial Class Depositos
         Me.LblTitulo.Name = "LblTitulo"
         Me.LblTitulo.Size = New System.Drawing.Size(220, 53)
         Me.LblTitulo.TabIndex = 0
-        Me.LblTitulo.Text = "Depostar dinheiro"
+        Me.LblTitulo.Text = "Depositar dinheiro"
         Me.LblTitulo.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'BtnDepositar
@@ -59,11 +59,11 @@ Partial Class Depositos
         Me.BtnDepositar.Enabled = False
         Me.BtnDepositar.FlatAppearance.BorderSize = 0
         Me.BtnDepositar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.BtnDepositar.Font = New System.Drawing.Font("Segoe UI", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BtnDepositar.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.BtnDepositar.ForeColor = System.Drawing.Color.FromArgb(CType(CType(191, Byte), Integer), CType(CType(191, Byte), Integer), CType(CType(191, Byte), Integer))
-        Me.BtnDepositar.Location = New System.Drawing.Point(143, 333)
+        Me.BtnDepositar.Location = New System.Drawing.Point(430, 368)
         Me.BtnDepositar.Name = "BtnDepositar"
-        Me.BtnDepositar.Size = New System.Drawing.Size(237, 35)
+        Me.BtnDepositar.Size = New System.Drawing.Size(90, 27)
         Me.BtnDepositar.TabIndex = 2
         Me.BtnDepositar.Text = "Depositar"
         Me.BtnDepositar.UseVisualStyleBackColor = False

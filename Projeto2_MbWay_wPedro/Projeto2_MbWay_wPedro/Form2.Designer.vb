@@ -28,6 +28,7 @@ Partial Class Form2
         Me.BtnPagamentos = New System.Windows.Forms.Button()
         Me.BtnTransferencias = New System.Windows.Forms.Button()
         Me.Panel1 = New System.Windows.Forms.Panel()
+        Me.BtnSair = New System.Windows.Forms.Button()
         Me.BtnLevantamentos = New System.Windows.Forms.Button()
         Me.PicBoxCartao = New System.Windows.Forms.PictureBox()
         Me.BtnAlterarCod = New System.Windows.Forms.Button()
@@ -98,6 +99,7 @@ Partial Class Form2
         '
         'Panel1
         '
+        Me.Panel1.Controls.Add(Me.BtnSair)
         Me.Panel1.Controls.Add(Me.BtnLevantamentos)
         Me.Panel1.Controls.Add(Me.BtnConsultas)
         Me.Panel1.Controls.Add(Me.PicBoxCartao)
@@ -109,6 +111,21 @@ Partial Class Form2
         Me.Panel1.Name = "Panel1"
         Me.Panel1.Size = New System.Drawing.Size(148, 412)
         Me.Panel1.TabIndex = 4
+        '
+        'BtnSair
+        '
+        Me.BtnSair.BackColor = System.Drawing.Color.FromArgb(CType(CType(18, Byte), Integer), CType(CType(38, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.BtnSair.FlatAppearance.BorderSize = 0
+        Me.BtnSair.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(5, Byte), Integer), CType(CType(108, Byte), Integer), CType(CType(242, Byte), Integer))
+        Me.BtnSair.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.BtnSair.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BtnSair.ForeColor = System.Drawing.Color.White
+        Me.BtnSair.Location = New System.Drawing.Point(9, 357)
+        Me.BtnSair.Name = "BtnSair"
+        Me.BtnSair.Size = New System.Drawing.Size(130, 43)
+        Me.BtnSair.TabIndex = 7
+        Me.BtnSair.Text = "Sair"
+        Me.BtnSair.UseVisualStyleBackColor = False
         '
         'BtnLevantamentos
         '
@@ -143,7 +160,7 @@ Partial Class Form2
         Me.BtnAlterarCod.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.BtnAlterarCod.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.BtnAlterarCod.ForeColor = System.Drawing.Color.White
-        Me.BtnAlterarCod.Location = New System.Drawing.Point(9, 357)
+        Me.BtnAlterarCod.Location = New System.Drawing.Point(9, 308)
         Me.BtnAlterarCod.Name = "BtnAlterarCod"
         Me.BtnAlterarCod.Size = New System.Drawing.Size(130, 43)
         Me.BtnAlterarCod.TabIndex = 4
@@ -185,4 +202,5 @@ Partial Class Form2
     Friend WithEvents Panel2 As Panel
     Friend WithEvents PicBoxCartao As PictureBox
     Friend WithEvents BtnLevantamentos As Button
+    Friend WithEvents BtnSair As Button
 End Class

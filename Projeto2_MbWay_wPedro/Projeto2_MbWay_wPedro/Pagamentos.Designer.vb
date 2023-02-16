@@ -25,11 +25,8 @@ Partial Class Pagamentos
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Pagamentos))
         Me.LblTitulo = New System.Windows.Forms.Label()
         Me.LblBarra = New System.Windows.Forms.Label()
-        Me.LblInformacao = New System.Windows.Forms.Label()
-        Me.TxtBoxEntidade = New System.Windows.Forms.TextBox()
         Me.TxtBoxReferencia = New System.Windows.Forms.TextBox()
         Me.TxtBoxMontante = New System.Windows.Forms.TextBox()
-        Me.LblEntidade = New System.Windows.Forms.Label()
         Me.LblReferências = New System.Windows.Forms.Label()
         Me.LblMontante = New System.Windows.Forms.Label()
         Me.BtnLimpar = New System.Windows.Forms.Button()
@@ -44,6 +41,7 @@ Partial Class Pagamentos
         Me.Btn9 = New System.Windows.Forms.Button()
         Me.Btn7 = New System.Windows.Forms.Button()
         Me.BtnOk = New System.Windows.Forms.Button()
+        Me.BtnConfirmar = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'LblTitulo
@@ -53,9 +51,9 @@ Partial Class Pagamentos
         Me.LblTitulo.ForeColor = System.Drawing.Color.White
         Me.LblTitulo.Location = New System.Drawing.Point(-2, -2)
         Me.LblTitulo.Name = "LblTitulo"
-        Me.LblTitulo.Size = New System.Drawing.Size(220, 53)
+        Me.LblTitulo.Size = New System.Drawing.Size(235, 53)
         Me.LblTitulo.TabIndex = 1
-        Me.LblTitulo.Text = "Pagamentos"
+        Me.LblTitulo.Text = "Pagamentos e serviços"
         Me.LblTitulo.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'LblBarra
@@ -67,71 +65,41 @@ Partial Class Pagamentos
         Me.LblBarra.TabIndex = 32
         Me.LblBarra.Text = resources.GetString("LblBarra.Text")
         '
-        'LblInformacao
-        '
-        Me.LblInformacao.Font = New System.Drawing.Font("Segoe UI", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.LblInformacao.ForeColor = System.Drawing.Color.White
-        Me.LblInformacao.Location = New System.Drawing.Point(143, 51)
-        Me.LblInformacao.Name = "LblInformacao"
-        Me.LblInformacao.Size = New System.Drawing.Size(237, 35)
-        Me.LblInformacao.TabIndex = 33
-        Me.LblInformacao.Text = "Elementos da factura"
-        Me.LblInformacao.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'TxtBoxEntidade
-        '
-        Me.TxtBoxEntidade.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TxtBoxEntidade.Location = New System.Drawing.Point(220, 89)
-        Me.TxtBoxEntidade.Name = "TxtBoxEntidade"
-        Me.TxtBoxEntidade.Size = New System.Drawing.Size(160, 29)
-        Me.TxtBoxEntidade.TabIndex = 34
-        '
         'TxtBoxReferencia
         '
-        Me.TxtBoxReferencia.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TxtBoxReferencia.Location = New System.Drawing.Point(241, 128)
+        Me.TxtBoxReferencia.Font = New System.Drawing.Font("Segoe UI", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TxtBoxReferencia.Location = New System.Drawing.Point(152, 89)
         Me.TxtBoxReferencia.Name = "TxtBoxReferencia"
-        Me.TxtBoxReferencia.Size = New System.Drawing.Size(139, 29)
+        Me.TxtBoxReferencia.ReadOnly = True
+        Me.TxtBoxReferencia.Size = New System.Drawing.Size(237, 33)
         Me.TxtBoxReferencia.TabIndex = 35
         '
         'TxtBoxMontante
         '
-        Me.TxtBoxMontante.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TxtBoxMontante.Location = New System.Drawing.Point(228, 167)
+        Me.TxtBoxMontante.Font = New System.Drawing.Font("Segoe UI", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TxtBoxMontante.Location = New System.Drawing.Point(152, 149)
         Me.TxtBoxMontante.Name = "TxtBoxMontante"
-        Me.TxtBoxMontante.Size = New System.Drawing.Size(152, 29)
+        Me.TxtBoxMontante.ReadOnly = True
+        Me.TxtBoxMontante.Size = New System.Drawing.Size(237, 33)
         Me.TxtBoxMontante.TabIndex = 36
-        '
-        'LblEntidade
-        '
-        Me.LblEntidade.AutoSize = True
-        Me.LblEntidade.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.LblEntidade.ForeColor = System.Drawing.Color.White
-        Me.LblEntidade.Location = New System.Drawing.Point(143, 92)
-        Me.LblEntidade.Name = "LblEntidade"
-        Me.LblEntidade.Size = New System.Drawing.Size(70, 21)
-        Me.LblEntidade.TabIndex = 37
-        Me.LblEntidade.Text = "Entidade"
         '
         'LblReferências
         '
-        Me.LblReferências.AutoSize = True
-        Me.LblReferências.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.LblReferências.Font = New System.Drawing.Font("Segoe UI", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LblReferências.ForeColor = System.Drawing.Color.White
-        Me.LblReferências.Location = New System.Drawing.Point(143, 131)
+        Me.LblReferências.Location = New System.Drawing.Point(147, 65)
         Me.LblReferências.Name = "LblReferências"
-        Me.LblReferências.Size = New System.Drawing.Size(90, 21)
+        Me.LblReferências.Size = New System.Drawing.Size(100, 21)
         Me.LblReferências.TabIndex = 38
-        Me.LblReferências.Text = "Referências"
+        Me.LblReferências.Text = "Referência"
         '
         'LblMontante
         '
-        Me.LblMontante.AutoSize = True
-        Me.LblMontante.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.LblMontante.Font = New System.Drawing.Font("Segoe UI", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LblMontante.ForeColor = System.Drawing.Color.White
-        Me.LblMontante.Location = New System.Drawing.Point(145, 170)
+        Me.LblMontante.Location = New System.Drawing.Point(147, 125)
         Me.LblMontante.Name = "LblMontante"
-        Me.LblMontante.Size = New System.Drawing.Size(77, 21)
+        Me.LblMontante.Size = New System.Drawing.Size(100, 21)
         Me.LblMontante.TabIndex = 39
         Me.LblMontante.Text = "Montante"
         '
@@ -144,7 +112,7 @@ Partial Class Pagamentos
         Me.BtnLimpar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.BtnLimpar.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.BtnLimpar.ForeColor = System.Drawing.Color.FromArgb(CType(CType(174, Byte), Integer), CType(CType(181, Byte), Integer), CType(CType(191, Byte), Integer))
-        Me.BtnLimpar.Location = New System.Drawing.Point(147, 344)
+        Me.BtnLimpar.Location = New System.Drawing.Point(152, 326)
         Me.BtnLimpar.Name = "BtnLimpar"
         Me.BtnLimpar.Size = New System.Drawing.Size(75, 40)
         Me.BtnLimpar.TabIndex = 50
@@ -160,7 +128,7 @@ Partial Class Pagamentos
         Me.Btn0.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Btn0.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Btn0.ForeColor = System.Drawing.Color.FromArgb(CType(CType(174, Byte), Integer), CType(CType(181, Byte), Integer), CType(CType(191, Byte), Integer))
-        Me.Btn0.Location = New System.Drawing.Point(228, 344)
+        Me.Btn0.Location = New System.Drawing.Point(233, 326)
         Me.Btn0.Name = "Btn0"
         Me.Btn0.Size = New System.Drawing.Size(75, 40)
         Me.Btn0.TabIndex = 49
@@ -176,7 +144,7 @@ Partial Class Pagamentos
         Me.Btn2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Btn2.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Btn2.ForeColor = System.Drawing.Color.FromArgb(CType(CType(174, Byte), Integer), CType(CType(181, Byte), Integer), CType(CType(191, Byte), Integer))
-        Me.Btn2.Location = New System.Drawing.Point(228, 298)
+        Me.Btn2.Location = New System.Drawing.Point(233, 280)
         Me.Btn2.Name = "Btn2"
         Me.Btn2.Size = New System.Drawing.Size(75, 40)
         Me.Btn2.TabIndex = 48
@@ -192,7 +160,7 @@ Partial Class Pagamentos
         Me.Btn5.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Btn5.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Btn5.ForeColor = System.Drawing.Color.FromArgb(CType(CType(174, Byte), Integer), CType(CType(181, Byte), Integer), CType(CType(191, Byte), Integer))
-        Me.Btn5.Location = New System.Drawing.Point(228, 252)
+        Me.Btn5.Location = New System.Drawing.Point(233, 234)
         Me.Btn5.Name = "Btn5"
         Me.Btn5.Size = New System.Drawing.Size(75, 40)
         Me.Btn5.TabIndex = 47
@@ -208,7 +176,7 @@ Partial Class Pagamentos
         Me.Btn1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Btn1.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Btn1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(174, Byte), Integer), CType(CType(181, Byte), Integer), CType(CType(191, Byte), Integer))
-        Me.Btn1.Location = New System.Drawing.Point(148, 298)
+        Me.Btn1.Location = New System.Drawing.Point(152, 280)
         Me.Btn1.Name = "Btn1"
         Me.Btn1.Size = New System.Drawing.Size(75, 40)
         Me.Btn1.TabIndex = 46
@@ -224,7 +192,7 @@ Partial Class Pagamentos
         Me.Btn3.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Btn3.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Btn3.ForeColor = System.Drawing.Color.FromArgb(CType(CType(174, Byte), Integer), CType(CType(181, Byte), Integer), CType(CType(191, Byte), Integer))
-        Me.Btn3.Location = New System.Drawing.Point(309, 298)
+        Me.Btn3.Location = New System.Drawing.Point(314, 280)
         Me.Btn3.Name = "Btn3"
         Me.Btn3.Size = New System.Drawing.Size(75, 40)
         Me.Btn3.TabIndex = 45
@@ -240,7 +208,7 @@ Partial Class Pagamentos
         Me.Btn6.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Btn6.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Btn6.ForeColor = System.Drawing.Color.FromArgb(CType(CType(174, Byte), Integer), CType(CType(181, Byte), Integer), CType(CType(191, Byte), Integer))
-        Me.Btn6.Location = New System.Drawing.Point(309, 252)
+        Me.Btn6.Location = New System.Drawing.Point(314, 234)
         Me.Btn6.Name = "Btn6"
         Me.Btn6.Size = New System.Drawing.Size(75, 40)
         Me.Btn6.TabIndex = 44
@@ -256,7 +224,7 @@ Partial Class Pagamentos
         Me.Btn8.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Btn8.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Btn8.ForeColor = System.Drawing.Color.FromArgb(CType(CType(174, Byte), Integer), CType(CType(181, Byte), Integer), CType(CType(191, Byte), Integer))
-        Me.Btn8.Location = New System.Drawing.Point(228, 206)
+        Me.Btn8.Location = New System.Drawing.Point(233, 188)
         Me.Btn8.Name = "Btn8"
         Me.Btn8.Size = New System.Drawing.Size(75, 40)
         Me.Btn8.TabIndex = 43
@@ -272,7 +240,7 @@ Partial Class Pagamentos
         Me.Btn4.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Btn4.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Btn4.ForeColor = System.Drawing.Color.FromArgb(CType(CType(174, Byte), Integer), CType(CType(181, Byte), Integer), CType(CType(191, Byte), Integer))
-        Me.Btn4.Location = New System.Drawing.Point(147, 252)
+        Me.Btn4.Location = New System.Drawing.Point(152, 234)
         Me.Btn4.Name = "Btn4"
         Me.Btn4.Size = New System.Drawing.Size(75, 40)
         Me.Btn4.TabIndex = 42
@@ -288,7 +256,7 @@ Partial Class Pagamentos
         Me.Btn9.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Btn9.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Btn9.ForeColor = System.Drawing.Color.FromArgb(CType(CType(174, Byte), Integer), CType(CType(181, Byte), Integer), CType(CType(191, Byte), Integer))
-        Me.Btn9.Location = New System.Drawing.Point(309, 206)
+        Me.Btn9.Location = New System.Drawing.Point(314, 188)
         Me.Btn9.Name = "Btn9"
         Me.Btn9.Size = New System.Drawing.Size(75, 40)
         Me.Btn9.TabIndex = 41
@@ -304,7 +272,7 @@ Partial Class Pagamentos
         Me.Btn7.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Btn7.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Btn7.ForeColor = System.Drawing.Color.FromArgb(CType(CType(174, Byte), Integer), CType(CType(181, Byte), Integer), CType(CType(191, Byte), Integer))
-        Me.Btn7.Location = New System.Drawing.Point(147, 206)
+        Me.Btn7.Location = New System.Drawing.Point(152, 188)
         Me.Btn7.Name = "Btn7"
         Me.Btn7.Size = New System.Drawing.Size(75, 40)
         Me.Btn7.TabIndex = 40
@@ -320,12 +288,26 @@ Partial Class Pagamentos
         Me.BtnOk.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.BtnOk.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.BtnOk.ForeColor = System.Drawing.Color.FromArgb(CType(CType(174, Byte), Integer), CType(CType(181, Byte), Integer), CType(CType(191, Byte), Integer))
-        Me.BtnOk.Location = New System.Drawing.Point(309, 344)
+        Me.BtnOk.Location = New System.Drawing.Point(314, 326)
         Me.BtnOk.Name = "BtnOk"
         Me.BtnOk.Size = New System.Drawing.Size(75, 40)
         Me.BtnOk.TabIndex = 51
         Me.BtnOk.Text = "OK"
         Me.BtnOk.UseVisualStyleBackColor = False
+        '
+        'BtnConfirmar
+        '
+        Me.BtnConfirmar.BackColor = System.Drawing.Color.FromArgb(CType(CType(5, Byte), Integer), CType(CType(108, Byte), Integer), CType(CType(242, Byte), Integer))
+        Me.BtnConfirmar.FlatAppearance.BorderSize = 0
+        Me.BtnConfirmar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.BtnConfirmar.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BtnConfirmar.ForeColor = System.Drawing.Color.FromArgb(CType(CType(174, Byte), Integer), CType(CType(181, Byte), Integer), CType(CType(191, Byte), Integer))
+        Me.BtnConfirmar.Location = New System.Drawing.Point(430, 368)
+        Me.BtnConfirmar.Name = "BtnConfirmar"
+        Me.BtnConfirmar.Size = New System.Drawing.Size(90, 27)
+        Me.BtnConfirmar.TabIndex = 52
+        Me.BtnConfirmar.Text = "Confirmar"
+        Me.BtnConfirmar.UseVisualStyleBackColor = False
         '
         'Pagamentos
         '
@@ -333,6 +315,7 @@ Partial Class Pagamentos
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(18, Byte), Integer), CType(CType(38, Byte), Integer), CType(CType(64, Byte), Integer))
         Me.ClientSize = New System.Drawing.Size(532, 407)
+        Me.Controls.Add(Me.BtnConfirmar)
         Me.Controls.Add(Me.BtnOk)
         Me.Controls.Add(Me.BtnLimpar)
         Me.Controls.Add(Me.Btn0)
@@ -347,11 +330,8 @@ Partial Class Pagamentos
         Me.Controls.Add(Me.Btn7)
         Me.Controls.Add(Me.LblMontante)
         Me.Controls.Add(Me.LblReferências)
-        Me.Controls.Add(Me.LblEntidade)
         Me.Controls.Add(Me.TxtBoxMontante)
         Me.Controls.Add(Me.TxtBoxReferencia)
-        Me.Controls.Add(Me.TxtBoxEntidade)
-        Me.Controls.Add(Me.LblInformacao)
         Me.Controls.Add(Me.LblBarra)
         Me.Controls.Add(Me.LblTitulo)
         Me.Name = "Pagamentos"
@@ -364,11 +344,8 @@ Partial Class Pagamentos
 
     Friend WithEvents LblTitulo As Label
     Friend WithEvents LblBarra As Label
-    Friend WithEvents LblInformacao As Label
-    Friend WithEvents TxtBoxEntidade As TextBox
     Friend WithEvents TxtBoxReferencia As TextBox
     Friend WithEvents TxtBoxMontante As TextBox
-    Friend WithEvents LblEntidade As Label
     Friend WithEvents LblReferências As Label
     Friend WithEvents LblMontante As Label
     Friend WithEvents BtnLimpar As Button
@@ -383,4 +360,5 @@ Partial Class Pagamentos
     Friend WithEvents Btn9 As Button
     Friend WithEvents Btn7 As Button
     Friend WithEvents BtnOk As Button
+    Friend WithEvents BtnConfirmar As Button
 End Class

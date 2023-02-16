@@ -32,6 +32,7 @@ Partial Class Levantamentos
         Me.Btn100euros = New System.Windows.Forms.Button()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.TxtBosDinheiro = New System.Windows.Forms.TextBox()
+        Me.BtnLevantar = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'LblTitulo
@@ -153,12 +154,27 @@ Partial Class Levantamentos
         Me.TxtBosDinheiro.Size = New System.Drawing.Size(237, 35)
         Me.TxtBosDinheiro.TabIndex = 58
         '
+        'BtnLevantar
+        '
+        Me.BtnLevantar.BackColor = System.Drawing.Color.FromArgb(CType(CType(5, Byte), Integer), CType(CType(108, Byte), Integer), CType(CType(242, Byte), Integer))
+        Me.BtnLevantar.FlatAppearance.BorderSize = 0
+        Me.BtnLevantar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.BtnLevantar.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BtnLevantar.ForeColor = System.Drawing.Color.FromArgb(CType(CType(174, Byte), Integer), CType(CType(181, Byte), Integer), CType(CType(191, Byte), Integer))
+        Me.BtnLevantar.Location = New System.Drawing.Point(430, 368)
+        Me.BtnLevantar.Name = "BtnLevantar"
+        Me.BtnLevantar.Size = New System.Drawing.Size(90, 27)
+        Me.BtnLevantar.TabIndex = 59
+        Me.BtnLevantar.Text = "Levantar"
+        Me.BtnLevantar.UseVisualStyleBackColor = False
+        '
         'Levantamentos
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(18, Byte), Integer), CType(CType(38, Byte), Integer), CType(CType(64, Byte), Integer))
         Me.ClientSize = New System.Drawing.Size(532, 407)
+        Me.Controls.Add(Me.BtnLevantar)
         Me.Controls.Add(Me.TxtBosDinheiro)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.Btn100euros)
@@ -185,4 +201,5 @@ Partial Class Levantamentos
     Friend WithEvents Btn100euros As Button
     Friend WithEvents Label1 As Label
     Friend WithEvents TxtBosDinheiro As TextBox
+    Friend WithEvents BtnLevantar As Button
 End Class
