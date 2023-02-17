@@ -11,7 +11,7 @@ Module codigoAtm
         For i = 0 To LIN
             clientes(i, 0) = 2000
             clientes(i, 1) = 1111
-            bloqueio(i) = 0
+            bloqueio(i) = 1
         Next
     End Sub
 End Module

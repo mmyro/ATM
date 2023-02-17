@@ -1,6 +1,5 @@
 ﻿Public Class FrmLogin
     Dim ok As Boolean = False
-    Dim Tentativas As Integer = 3
     Public User As Integer
 
     Private Sub FrmLogin_Closed(sender As Object, e As EventArgs) Handles MyBase.Closed
@@ -42,8 +41,8 @@
                 Form2.PicBoxCartao.Image = My.Resources.Clientes
             ElseIf bloqueio(User) = 3 Then
                 ok = False
-                TxtBoxPassword.Clear()
-                TxtBoxUsername.Clear()
+                TxtBoxUsername.Text = ""
+                TxtBoxPassword.Text = ""
                 clientes(User, 1) = 11111
                 MsgBox("Erro apos as 3 tentataivas" & vbCrLf& & "Tente outra vez ou mais tarde!", MsgBoxStyle.Exclamation)
             Else
