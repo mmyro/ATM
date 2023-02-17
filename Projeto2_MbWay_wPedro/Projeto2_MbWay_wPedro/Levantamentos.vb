@@ -2,29 +2,32 @@
     Private Sub Levantamentos_closed(sender As Object, e As EventArgs) Handles MyBase.Closed
         Application.Exit()
     End Sub
-    Function Nota()
-        Dim cash As Integer = clientes(FrmLogin.User, 0)
-        Dim contar() As Integer = {0, 0, 0, 0, 0}
-        Do
-            If cash Mod 100 = 0 Or cash - 100 > 0 And notas(0) > 0 Then
+    Sub Nota(cash As Integer, Contar() As Integer)
+        Do While cash <> 0
+            If (cash - 100) >= 0 And notas(0) > 0 Then
+                cash -= 100
                 notas(0) -= 1
-                contar(0) += 1
-            ElseIf cash Mod 50 = 0 Or cash - 50 > 0 And notas(1) > 0 Then
+                Contar(0) += 1
+            ElseIf (cash - 50) >= 0 And notas(1) > 0 Then
+                cash -= 50
                 notas(1) -= 1
-                contar(1) += 1
-            ElseIf cash Mod 20 = 0 Or cash - 20 > 0 And notas(2) > 0 Then
+                Contar(1) += 1
+            ElseIf (cash - 20) >= 0 And notas(2) > 0 Then
+                cash -= 20
                 notas(2) -= 1
-                contar(2) += 1
-            ElseIf cash Mod 10 = 0 Or cash - 10 > 0 And notas(3) > 0 Then
+                Contar(2) += 1
+            ElseIf (cash - 10) >= 0 And notas(3) > 0 Then
+                cash -= 10
                 notas(3) -= 1
-                contar(3) += 1
-            ElseIf cash Mod 5 = 0 Or cash - 5 > 0 And notas(4) > 0 Then
+                Contar(3) += 1
+            ElseIf (cash - 5) >= 0 And notas(4) > 0 Then
+                cash -= 5
                 notas(4) -= 1
-                contar(4) += 1
+                Contar(4) += 1
             End If
-        Loop While cash <> 0
-        Return MsgBox("Nota 100 x " & contar(0) & " Nota 50 x " & contar(1) & " Nota 20 x " & contar(2) & " Nota 10 x " & contar(3) & " Nota 5 x " & contar(4))
-    End Function
+        Loop
+
+    End Sub
     Private Sub Btn100euros_Click(sender As Object, e As EventArgs) Handles Btn100euros.Click
         If clientes(FrmLogin.User, 0) >= 100 Then
             clientes(FrmLogin.User, 0) -= 100
@@ -58,13 +61,14 @@
     End Sub
 
     Private Sub BtnLevantar_Click(sender As Object, e As EventArgs) Handles BtnLevantar.Click
-        If clientes(FrmLogin.User, 0) >= Val(TxtBosDinheiro.Text) And Val(TxtBosDinheiro.Text) Mod 5 = 0 Then
-            clientes(FrmLogin.User, 0) -= Val(TxtBosDinheiro.Text)
-            Nota()
+        Dim contar() As Integer = {0, 0, 0, 0, 0}
+        If clientes(FrmLogin.User, 0) >= Val(TxtBoxDinheiro.Text) And Val(TxtBoxDinheiro.Text) Mod 5 = 0 Then
+            clientes(FrmLogin.User, 0) -= Val(TxtBoxDinheiro.Text)
+            Nota(Val(TxtBoxDinheiro.Text), contar)
+            MsgBox("Nota 100 x " & contar(0) & " Nota 50 x " & contar(1) & " Nota 20 x " & contar(2) & " Nota 10 x " & contar(3) & " Nota 5 x " & contar(4))
+        Else
+            MsgBox("Dinheiro insuficiente")
+            TxtBoxDinheiro.Text = ""
         End If
-    End Sub
-
-    Private Sub TxtBosDinheiro_TextChanged(sender As Object, e As EventArgs) Handles TxtBosDinheiro.TextChanged
-
     End Sub
 End Class
