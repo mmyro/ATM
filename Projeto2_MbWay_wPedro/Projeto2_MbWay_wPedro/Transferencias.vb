@@ -8,16 +8,23 @@ Public Class Transferencias
     End Sub
 
     Private Sub BtnConfirmar_Click(sender As Object, e As EventArgs) Handles BtnConfirmar.Click
-        If clientes(FrmLogin.User, 0) >= Val(TxtBoxMontante.Text) And TxtBoxNmrConta.Text <> "" And TxtBoxMontante.Text <> "" Then
-            clientes(FrmLogin.User, 0) -= Val(TxtBoxMontante.Text)
-            MsgBox("Transferencia efetuada com sucesso")
-            TxtBoxMontante.Text = ""
-            TxtBoxNmrConta.Text = ""
-        ElseIf TxtBoxNmrConta.Text = "" Or TxtBoxMontante.Text = "" Then
-            MsgBox("Transferencia não foi efetuada com sucesso")
+        If TxtBoxNmrConta.Text >= 0 And TxtBoxNmrConta.Text <= 6 Then
+            If clientes(FrmLogin.User, 0) >= Val(TxtBoxMontante.Text) And TxtBoxNmrConta.Text <> "" And TxtBoxMontante.Text <> "" Then
+                clientes(FrmLogin.User, 0) -= Val(TxtBoxMontante.Text)
+                clientes(TxtBoxNmrConta.Text, 0) += Val(TxtBoxMontante.Text)
+                MsgBox("Transferencia efetuada com sucesso")
+                TxtBoxMontante.Text = ""
+                TxtBoxNmrConta.Text = ""
+            ElseIf TxtBoxNmrConta.Text = "" Or TxtBoxMontante.Text = "" Then
+                MsgBox("Transferencia não foi efetuada com sucesso")
+            Else
+                MsgBox("Dinheiro Insuficiente")
+            End If
         Else
-            MsgBox("Dinheiro Insuficiente")
-
+            MsgBox("Numero da Conta Inválido")
+            ok = True
+            TxtBoxNmrConta.Text = ""
+            TxtBoxMontante.Text = ""
         End If
     End Sub
 
@@ -47,6 +54,17 @@ Public Class Transferencias
         If ok = False Then
             ok = True
         Else
+            ok = False
+        End If
+    End Sub
+
+    Private Sub BtnLimpar_Click(sender As Object, e As EventArgs) Handles BtnLimpar.Click
+        If TxtBoxNmrConta.Text.Length > 0 And ok = False Then
+            TxtBoxNmrConta.Text = TxtBoxNmrConta.Text.Remove(TxtBoxNmrConta.Text.Length - 1, 1)
+        End If
+        If TxtBoxMontante.Text.Length > 0 And ok = True Then
+            TxtBoxMontante.Text = TxtBoxMontante.Text.Remove(TxtBoxMontante.Text.Length - 1, 1)
+        ElseIf TxtBoxMontante.Text.Length = 0 And ok = True Then
             ok = False
         End If
     End Sub

@@ -124,7 +124,7 @@ Partial Class Form2
         Me.BtnSair.Name = "BtnSair"
         Me.BtnSair.Size = New System.Drawing.Size(130, 43)
         Me.BtnSair.TabIndex = 7
-        Me.BtnSair.Text = "Sair"
+        Me.BtnSair.Text = "Logout"
         Me.BtnSair.UseVisualStyleBackColor = False
         '
         'BtnLevantamentos

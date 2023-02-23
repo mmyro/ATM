@@ -30,7 +30,14 @@
 
     Private Sub BntOk_Click(sender As Object, e As EventArgs) Handles BtnOk.Click
         User = Val(TxtBoxUsername.Text)
-        If ok = True Then
+        If ok = False Then
+            If User >= 0 And User <= 6 Or User = 99 Then
+                ok = True
+            Else
+                MsgBox("Codigo Cliente inexistente!", MsgBoxStyle.Critical)
+                TxtBoxUsername.Text = ""
+            End If
+        ElseIf ok = True Then
             If User = 99 And TxtBoxPassword.Text = "0000" Then
                 Me.Hide()
                 Form2.Show()
@@ -41,22 +48,14 @@
                 Form2.PicBoxCartao.Image = My.Resources.Clientes
             ElseIf bloqueio(User) = 3 Then
                 ok = False
-                TxtBoxUsername.Text = ""
-                TxtBoxPassword.Text = ""
+                TxtBoxUsername.Clear()
+                TxtBoxPassword.Clear()
                 clientes(User, 1) = 11111
                 MsgBox("Erro apos as 3 tentataivas" & vbCrLf& & "Tente outra vez ou mais tarde!", MsgBoxStyle.Exclamation)
             Else
-                MsgBox("Password Inválida!" & vbCrLf & bloqueio(User) & " Restantes", MsgBoxStyle.Information)
+                MsgBox("Password Inválida!" & vbCrLf & 3 - bloqueio(User) & " Restantes", MsgBoxStyle.Information)
                 bloqueio(User) += 1
                 TxtBoxPassword.Clear()
-            End If
-        End If
-        If ok = False Then
-            If User >= 0 And User <= 6 Or User = 99 Then
-                ok = True
-            Else
-                MsgBox("Codigo Cliente inexistente!", MsgBoxStyle.Critical)
-                TxtBoxUsername.Text = ""
             End If
         End If
     End Sub

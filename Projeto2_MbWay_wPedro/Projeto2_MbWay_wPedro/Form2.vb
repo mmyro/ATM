@@ -39,6 +39,10 @@
     End Sub
 
     Private Sub BtnSair_Click(sender As Object, e As EventArgs) Handles BtnSair.Click
-        Me.Close()
+        Dim op As Integer
+        op = MsgBox("Deseja mesmo sair?", MsgBoxStyle.Information + MsgBoxStyle.YesNo)
+        If op = vbYes Then
+            Me.Close()
+        End If
     End Sub
 End Class
