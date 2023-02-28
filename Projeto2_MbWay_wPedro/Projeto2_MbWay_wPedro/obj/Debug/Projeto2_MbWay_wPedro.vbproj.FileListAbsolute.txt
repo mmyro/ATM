@@ -93,3 +93,4 @@ C:\Users\Myro\Desktop\atm-main\Projeto2_MbWay_wPedro\Projeto2_MbWay_wPedro\bin\D
 C:\Users\Myro\Desktop\atm\Projeto2_MbWay_wPedro\Projeto2_MbWay_wPedro\obj\Debug\Projeto2_MbWay_wPedro.Definicoes.resources
 C:\Users\Myro\Desktop\atm\Projeto2_MbWay_wPedro\Projeto2_MbWay_wPedro\obj\Debug\Projeto2_MbWay_wPedro.password.resources
 C:\Users\vkras\OneDrive\Ambiente de Trabalho\atm\Projeto2_MbWay_wPedro\Projeto2_MbWay_wPedro\obj\Debug\Projeto2_MbWay_wPedro.password.resources
+C:\Users\Myro\Desktop\atm\Projeto2_MbWay_wPedro\Projeto2_MbWay_wPedro\obj\Debug\Projeto2_MbWay_wPedro.Admin.resources
