@@ -6,26 +6,12 @@
         Application.Exit()
     End Sub
 
-    Private Sub Transferencias_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        AddHandler Btn0.Click, AddressOf Teclas
-        AddHandler Btn1.Click, AddressOf Teclas
-        AddHandler Btn2.Click, AddressOf Teclas
-        AddHandler Btn3.Click, AddressOf Teclas
-        AddHandler Btn4.Click, AddressOf Teclas
-        AddHandler Btn5.Click, AddressOf Teclas
-        AddHandler Btn6.Click, AddressOf Teclas
-        AddHandler Btn7.Click, AddressOf Teclas
-        AddHandler Btn8.Click, AddressOf Teclas
-        AddHandler Btn9.Click, AddressOf Teclas
-    End Sub
-
     Private Sub Teclas(sender As Object, e As EventArgs)
         If ok = False And TxtBoxUsername.Text.Length < 2 Then
             TxtBoxUsername.Text &= sender.text
         ElseIf ok = True And TxtBoxPassword.Text.Length < 4 Then
             TxtBoxPassword.Text &= sender.text
         End If
-
     End Sub
 
     Private Sub BntOk_Click(sender As Object, e As EventArgs) Handles BtnOk.Click
@@ -40,8 +26,8 @@
         ElseIf ok = True Then
             If User = 99 And TxtBoxPassword.Text = "0000" Then
                 Me.Hide()
-                Form2.Show()
-                Form2.PicBoxCartao.Image = My.Resources.Admin
+                Admin.Show()
+                Admin.PicBoxCartao.Image = My.Resources.Admin
             ElseIf clientes(User, 1) = Val(TxtBoxPassword.Text) And bloqueio(User) < 3 Then
                 Me.Hide()
                 Form2.Show()
@@ -72,6 +58,21 @@
     End Sub
 
     Private Sub FrmLogin_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        AddHandler Btn0.Click, AddressOf Teclas
+        AddHandler Btn1.Click, AddressOf Teclas
+        AddHandler Btn2.Click, AddressOf Teclas
+        AddHandler Btn3.Click, AddressOf Teclas
+        AddHandler Btn4.Click, AddressOf Teclas
+        AddHandler Btn5.Click, AddressOf Teclas
+        AddHandler Btn6.Click, AddressOf Teclas
+        AddHandler Btn7.Click, AddressOf Teclas
+        AddHandler Btn8.Click, AddressOf Teclas
+        AddHandler Btn9.Click, AddressOf Teclas
+        Unblock()
+        Block()
         IniciarClientes()
+        TxtBoxPassword.Clear()
+        TxtBoxUsername.Clear()
+        ok = False
     End Sub
 End Class

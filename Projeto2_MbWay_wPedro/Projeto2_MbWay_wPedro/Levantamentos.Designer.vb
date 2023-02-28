@@ -151,7 +151,6 @@ Partial Class Levantamentos
         Me.TxtBoxDinheiro.Font = New System.Drawing.Font("Segoe UI", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TxtBoxDinheiro.Location = New System.Drawing.Point(142, 250)
         Me.TxtBoxDinheiro.Name = "TxtBoxDinheiro"
-        Me.TxtBoxDinheiro.ReadOnly = True
         Me.TxtBoxDinheiro.Size = New System.Drawing.Size(237, 33)
         Me.TxtBoxDinheiro.TabIndex = 58
         '
