@@ -32,9 +32,9 @@ Partial Class Consultas
         '
         Me.LblDinheiro.Font = New System.Drawing.Font("Segoe UI", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LblDinheiro.ForeColor = System.Drawing.Color.White
-        Me.LblDinheiro.Location = New System.Drawing.Point(65, 85)
+        Me.LblDinheiro.Location = New System.Drawing.Point(98, 122)
         Me.LblDinheiro.Name = "LblDinheiro"
-        Me.LblDinheiro.Size = New System.Drawing.Size(404, 247)
+        Me.LblDinheiro.Size = New System.Drawing.Size(340, 209)
         Me.LblDinheiro.TabIndex = 1
         Me.LblDinheiro.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '

@@ -69,4 +69,59 @@ Public Class Transferencias
         End If
     End Sub
 
+    Private Sub Btn0_Click(sender As Object, e As EventArgs) Handles Btn0.Click
+
+    End Sub
+
+    Private Sub Btn2_Click(sender As Object, e As EventArgs) Handles Btn2.Click
+
+    End Sub
+
+    Private Sub Btn5_Click(sender As Object, e As EventArgs) Handles Btn5.Click
+
+    End Sub
+
+    Private Sub Btn1_Click(sender As Object, e As EventArgs) Handles Btn1.Click
+
+    End Sub
+
+    Private Sub Btn3_Click(sender As Object, e As EventArgs) Handles Btn3.Click
+
+    End Sub
+
+    Private Sub Btn6_Click(sender As Object, e As EventArgs) Handles Btn6.Click
+
+    End Sub
+
+    Private Sub Btn8_Click(sender As Object, e As EventArgs) Handles Btn8.Click
+
+    End Sub
+
+    Private Sub Btn4_Click(sender As Object, e As EventArgs) Handles Btn4.Click
+
+    End Sub
+
+    Private Sub Btn9_Click(sender As Object, e As EventArgs) Handles Btn9.Click
+
+    End Sub
+
+    Private Sub Btn7_Click(sender As Object, e As EventArgs) Handles Btn7.Click
+
+    End Sub
+
+    Private Sub TxtBoxMontante_TextChanged(sender As Object, e As EventArgs) Handles TxtBoxMontante.TextChanged
+
+    End Sub
+
+    Private Sub TxtBoxNmrConta_TextChanged(sender As Object, e As EventArgs) Handles TxtBoxNmrConta.TextChanged
+
+    End Sub
+
+    Private Sub LblMontante_Click(sender As Object, e As EventArgs) Handles LblMontante.Click
+
+    End Sub
+
+    Private Sub LblNmrConta_Click(sender As Object, e As EventArgs) Handles LblNmrConta.Click
+
+    End Sub
 End Class

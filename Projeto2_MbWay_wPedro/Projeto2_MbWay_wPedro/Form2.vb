@@ -1,4 +1,6 @@
-﻿Public Class Form2
+﻿Imports System.Runtime.CompilerServices
+
+Public Class Form2
 
     Sub trocarPainel(ByVal panel As Form)
         Panel2.Controls.Clear()
@@ -11,7 +13,7 @@
 
     Private Sub BtnConsultas_Click(sender As Object, e As EventArgs) Handles BtnConsultas.Click
         trocarPainel(Consultas)
-        Consultas.LblDinheiro.Text = "Saldo atual:" & vbCrLf & "-------------" & vbCrLf & clientes(Val(FrmLogin.TxtBoxUsername.Text), 0) & " EUR"
+        Consultas.LblDinheiro.Text = "Numero da conta: " & FrmLogin.User & vbCrLf & "Saldo atual:" & vbCrLf & clientes(Val(FrmLogin.TxtBoxUsername.Text), 0) & " EUR"
     End Sub
 
     Private Sub BtnDepositos_Click(sender As Object, e As EventArgs) Handles BtnDepositos.Click

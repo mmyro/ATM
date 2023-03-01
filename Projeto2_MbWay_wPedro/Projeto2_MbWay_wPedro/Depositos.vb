@@ -11,11 +11,11 @@
         Application.Exit()
     End Sub
 
-    Private Sub TxtDepositar_TextChanged(sender As Object, e As EventArgs) Handles TxtDepositar.TextChanged
-        If TxtDepositar.Text <> "" Then
-            BtnDepositar.Enabled = True
-        End If
-    End Sub
+    'Private Sub TxtDepositar_TextChanged(sender As Object, e As EventArgs) Handles TxtDepositar.TextChanged
+    'If TxtDepositar.Text <> "" Then
+    ' BtnDepositar.Enabled = True
+    '   End If
+    ' End Sub
 
     Private Sub password_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         AddHandler Btn0.Click, AddressOf Teclas

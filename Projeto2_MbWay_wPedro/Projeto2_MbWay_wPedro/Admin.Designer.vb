@@ -56,9 +56,10 @@ Partial Class Admin
         'PicBoxCartao
         '
         Me.PicBoxCartao.Image = Global.Projeto2_MbWay_wPedro.My.Resources.Resources.Admin
-        Me.PicBoxCartao.Location = New System.Drawing.Point(456, 55)
+        Me.PicBoxCartao.Location = New System.Drawing.Point(445, 55)
         Me.PicBoxCartao.Name = "PicBoxCartao"
-        Me.PicBoxCartao.Size = New System.Drawing.Size(64, 70)
+        Me.PicBoxCartao.Size = New System.Drawing.Size(75, 76)
+        Me.PicBoxCartao.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage
         Me.PicBoxCartao.TabIndex = 32
         Me.PicBoxCartao.TabStop = False
         '

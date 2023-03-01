@@ -71,4 +71,10 @@
             TxtBoxDinheiro.Text = ""
         End If
     End Sub
+
+    Private Sub TxtBoxDinheiro_KeyPress(sender As Object, e As KeyPressEventArgs) Handles TxtBoxDinheiro.KeyPress
+        If Not Char.IsNumber(e.KeyChar) AndAlso Not Char.IsControl(e.KeyChar) Then
+            e.Handled = True
+        End If
+    End Sub
 End Class
