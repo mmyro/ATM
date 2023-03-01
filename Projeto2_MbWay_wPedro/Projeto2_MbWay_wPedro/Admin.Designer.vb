@@ -25,11 +25,11 @@ Partial Class Admin
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Admin))
         Me.LblTitulo = New System.Windows.Forms.Label()
         Me.LblBarra = New System.Windows.Forms.Label()
-        Me.PicBoxCartao = New System.Windows.Forms.PictureBox()
         Me.BtnDesbloqCartoes = New System.Windows.Forms.Button()
         Me.BtnAddNotas = New System.Windows.Forms.Button()
         Me.LstBoxBlock = New System.Windows.Forms.ListBox()
         Me.BtnSair = New System.Windows.Forms.Button()
+        Me.PicBoxCartao = New System.Windows.Forms.PictureBox()
         CType(Me.PicBoxCartao, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -52,16 +52,6 @@ Partial Class Admin
         Me.LblBarra.Size = New System.Drawing.Size(566, 23)
         Me.LblBarra.TabIndex = 31
         Me.LblBarra.Text = resources.GetString("LblBarra.Text")
-        '
-        'PicBoxCartao
-        '
-        Me.PicBoxCartao.Image = Global.Projeto2_MbWay_wPedro.My.Resources.Resources.Admin
-        Me.PicBoxCartao.Location = New System.Drawing.Point(445, 55)
-        Me.PicBoxCartao.Name = "PicBoxCartao"
-        Me.PicBoxCartao.Size = New System.Drawing.Size(75, 76)
-        Me.PicBoxCartao.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage
-        Me.PicBoxCartao.TabIndex = 32
-        Me.PicBoxCartao.TabStop = False
         '
         'BtnDesbloqCartoes
         '
@@ -115,6 +105,16 @@ Partial Class Admin
         Me.BtnSair.TabIndex = 36
         Me.BtnSair.Text = "Logout"
         Me.BtnSair.UseVisualStyleBackColor = False
+        '
+        'PicBoxCartao
+        '
+        Me.PicBoxCartao.Image = Global.Projeto2_MbWay_wPedro.My.Resources.Resources.Admin
+        Me.PicBoxCartao.Location = New System.Drawing.Point(445, 55)
+        Me.PicBoxCartao.Name = "PicBoxCartao"
+        Me.PicBoxCartao.Size = New System.Drawing.Size(75, 76)
+        Me.PicBoxCartao.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage
+        Me.PicBoxCartao.TabIndex = 32
+        Me.PicBoxCartao.TabStop = False
         '
         'Admin
         '

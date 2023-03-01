@@ -1,6 +1,5 @@
 ﻿Public Class FrmLogin
     Dim ok As Boolean = False
-    Public User As Integer
 
     Private Sub FrmLogin_Closed(sender As Object, e As EventArgs) Handles MyBase.Closed
         Application.Exit()
@@ -71,8 +70,5 @@
         Unblock()
         Block()
         IniciarClientes()
-        TxtBoxPassword.Clear()
-        TxtBoxUsername.Clear()
-        ok = False
     End Sub
 End Class

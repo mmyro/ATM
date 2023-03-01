@@ -24,51 +24,79 @@
                 cash -= 5
                 notas(4) -= 1
                 Contar(4) += 1
+            Else
+                MsgBox("Não há notas suficientes")
+                Levantar = True
+                Exit Do
             End If
         Loop
 
     End Sub
     Private Sub Btn100euros_Click(sender As Object, e As EventArgs) Handles Btn100euros.Click
-        If clientes(FrmLogin.User, 0) >= 100 Then
-            clientes(FrmLogin.User, 0) -= 100
-
+        Dim contar() As Integer = {0, 0, 0, 0, 0}
+        Nota(100, contar)
+        If clientes(User, 0) >= 100 And Levantar = False Then
+            clientes(User, 0) -= 100
+            MsgBox("Nota 100 x " & contar(0) & " Nota 50 x " & contar(1) & " Nota 20 x " & contar(2) & " Nota 10 x " & contar(3) & " Nota 5 x " & contar(4))
+        ElseIf clientes(User, 0) < 100 Then
+            MsgBox("Dinheiro Insuficiente")
         End If
     End Sub
 
     Private Sub Btn50euros_Click(sender As Object, e As EventArgs) Handles Btn50euros.Click
-        If clientes(FrmLogin.User, 0) >= 50 Then
-            clientes(FrmLogin.User, 0) -= 50
-
+        Dim contar() As Integer = {0, 0, 0, 0, 0}
+        Nota(50, contar)
+        If clientes(User, 0) >= 50 And Levantar = False Then
+            clientes(User, 0) -= 50
+            MsgBox(" Nota 50 x " & contar(1) & " Nota 20 x " & contar(2) & " Nota 10 x " & contar(3) & " Nota 5 x " & contar(4))
+        ElseIf clientes(User, 0) < 50 Then
+            MsgBox("Dinheiro Insuficiente")
         End If
     End Sub
 
     Private Sub Btn10euros_Click(sender As Object, e As EventArgs) Handles Btn10euros.Click
-        If clientes(FrmLogin.User, 0) >= 10 Then
-            clientes(FrmLogin.User, 0) -= 10
+        Dim contar() As Integer = {0, 0, 0, 0, 0}
+        Nota(10, contar)
+        If clientes(User, 0) >= 10 And Levantar = False Then
+            clientes(User, 0) -= 10
+            MsgBox(" Nota 10 x " & contar(3) & " Nota 5 x " & contar(4))
+        ElseIf clientes(User, 0) < 10 Then
+            MsgBox("Dinheiro Insuficiente")
         End If
     End Sub
 
     Private Sub Btn20euros_Click(sender As Object, e As EventArgs) Handles Btn20euros.Click
-        If clientes(FrmLogin.User, 0) >= 20 Then
-            clientes(FrmLogin.User, 0) -= 20
+        Dim contar() As Integer = {0, 0, 0, 0, 0}
+        Nota(20, contar)
+        If clientes(User, 0) >= 20 And Levantar = False Then
+            clientes(User, 0) -= 20
+            MsgBox("Nota 20 x " & contar(2) & " Nota 10 x " & contar(3) & " Nota 5 x " & contar(4))
+        ElseIf clientes(User, 0) < 20 Then
+            MsgBox("Dinheiro Insuficiente")
         End If
     End Sub
 
     Private Sub Btn5euros_Click(sender As Object, e As EventArgs) Handles Btn5euros.Click
-        If clientes(FrmLogin.User, 0) >= 5 Then
-            clientes(FrmLogin.User, 0) -= 5
+        Dim contar() As Integer = {0, 0, 0, 0, 0}
+        Nota(5, contar)
+        If clientes(User, 0) >= 5 And Levantar = False Then
+            clientes(User, 0) -= 5
+            MsgBox("Nota 5 x " & contar(4))
+        ElseIf clientes(User, 0) < 5 Then
+            MsgBox("Dinheiro Insuficiente")
         End If
     End Sub
 
     Private Sub BtnLevantar_Click(sender As Object, e As EventArgs) Handles BtnLevantar.Click
         Dim contar() As Integer = {0, 0, 0, 0, 0}
-        If clientes(FrmLogin.User, 0) >= Val(TxtBoxDinheiro.Text) And Val(TxtBoxDinheiro.Text) Mod 5 = 0 Then
-            clientes(FrmLogin.User, 0) -= Val(TxtBoxDinheiro.Text)
-            Nota(Val(TxtBoxDinheiro.Text), contar)
+        Nota(Val(TxtBoxDinheiro.Text), contar)
+        If clientes(User, 0) >= Val(TxtBoxDinheiro.Text) And Val(TxtBoxDinheiro.Text) Mod 5 = 0 And Levantar = False Then
+            clientes(User, 0) -= Val(TxtBoxDinheiro.Text)
             MsgBox("Nota 100 x " & contar(0) & " Nota 50 x " & contar(1) & " Nota 20 x " & contar(2) & " Nota 10 x " & contar(3) & " Nota 5 x " & contar(4))
-        Else
+            TxtBoxDinheiro.Clear()
+        ElseIf clientes(User, 0) < Val(TxtBoxDinheiro.Text) Then
             MsgBox("Dinheiro insuficiente")
-            TxtBoxDinheiro.Text = ""
+            TxtBoxDinheiro.Clear()
         End If
     End Sub
 

@@ -1,5 +1,5 @@
 ﻿Public Class Admin
-    Private Sub Admin_Load(sender As Object, e As EventArgs) Handles MyBase.Closed
+    Private Sub Admin_closed(sender As Object, e As EventArgs) Handles MyBase.Closed
         Application.Exit()
     End Sub
 
@@ -16,5 +16,9 @@
     Private Sub BtnSair_Click(sender As Object, e As EventArgs) Handles BtnSair.Click
         Me.Hide()
         FrmLogin.Show()
+    End Sub
+
+    Private Sub BtnAddNotas_Click(sender As Object, e As EventArgs) Handles BtnAddNotas.Click
+        AddNotas.Show()
     End Sub
 End Class

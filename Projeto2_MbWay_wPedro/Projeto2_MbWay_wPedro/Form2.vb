@@ -13,7 +13,7 @@ Public Class Form2
 
     Private Sub BtnConsultas_Click(sender As Object, e As EventArgs) Handles BtnConsultas.Click
         trocarPainel(Consultas)
-        Consultas.LblDinheiro.Text = "Numero da conta: " & FrmLogin.User & vbCrLf & "Saldo atual:" & vbCrLf & clientes(Val(FrmLogin.TxtBoxUsername.Text), 0) & " EUR"
+        Consultas.LblDinheiro.Text = "Numero da conta: " & User & vbCrLf & "Saldo atual:" & vbCrLf & clientes(Val(FrmLogin.TxtBoxUsername.Text), 0) & " EUR"
     End Sub
 
     Private Sub BtnDepositos_Click(sender As Object, e As EventArgs) Handles BtnDepositos.Click

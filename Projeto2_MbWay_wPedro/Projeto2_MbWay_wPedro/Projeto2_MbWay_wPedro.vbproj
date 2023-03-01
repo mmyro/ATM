@@ -109,6 +109,12 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AddNotas.Designer.vb">
+      <DependentUpon>AddNotas.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AddNotas.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Admin.Designer.vb">
       <DependentUpon>Admin.vb</DependentUpon>
     </Compile>
@@ -188,6 +194,9 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="AddNotas.resx">
+      <DependentUpon>AddNotas.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Admin.resx">
       <DependentUpon>Admin.vb</DependentUpon>
     </EmbeddedResource>

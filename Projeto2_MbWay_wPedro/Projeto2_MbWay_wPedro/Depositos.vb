@@ -2,22 +2,21 @@
 
     Dim ok As Boolean = False
     Private Sub BtnDepositar_Click(sender As Object, e As EventArgs) Handles BtnDepositar.Click
-        clientes(FrmLogin.User, 0) += Val(TxtDepositar.Text)
-        MsgBox("Depositado com sucesso")
-        TxtDepositar.Text = ""
+        If TxtDepositar.Text <> "" Then
+            clientes(User, 0) += Val(TxtDepositar.Text)
+            MsgBox("Depositado com sucesso")
+            TxtDepositar.Clear()
+        Else
+            MsgBox("Insira um valor primeiro!", MsgBoxStyle.Information)
+        End If
     End Sub
 
     Private Sub Depositos_closed(sender As Object, e As EventArgs) Handles MyBase.Closed
         Application.Exit()
     End Sub
 
-    'Private Sub TxtDepositar_TextChanged(sender As Object, e As EventArgs) Handles TxtDepositar.TextChanged
-    'If TxtDepositar.Text <> "" Then
-    ' BtnDepositar.Enabled = True
-    '   End If
-    ' End Sub
-
     Private Sub password_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        AddHandler Btn00.Click, AddressOf Teclas
         AddHandler Btn0.Click, AddressOf Teclas
         AddHandler Btn1.Click, AddressOf Teclas
         AddHandler Btn2.Click, AddressOf Teclas

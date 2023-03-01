@@ -11,7 +11,7 @@
         MsgBox(TxtNew.Text)
         If Val(TxtNew.Text) = Val(TxtConfirm.Text) Then
             ok = False
-            clientes(FrmLogin.User, 1) = Val(TxtNew.Text)
+            clientes(User, 1) = Val(TxtNew.Text)
             TxtConfirm.Clear()
             TxtNew.Clear()
             Definicoes.TxtBoxOldPassword.Clear()

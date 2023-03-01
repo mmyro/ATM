@@ -9,8 +9,8 @@ Public Class Transferencias
 
     Private Sub BtnConfirmar_Click(sender As Object, e As EventArgs) Handles BtnConfirmar.Click
         If TxtBoxNmrConta.Text >= 0 And TxtBoxNmrConta.Text <= 6 Then
-            If clientes(FrmLogin.User, 0) >= Val(TxtBoxMontante.Text) And TxtBoxNmrConta.Text <> "" And TxtBoxMontante.Text <> "" Then
-                clientes(FrmLogin.User, 0) -= Val(TxtBoxMontante.Text)
+            If clientes(User, 0) >= Val(TxtBoxMontante.Text) And TxtBoxNmrConta.Text <> "" And TxtBoxMontante.Text <> "" Then
+                clientes(User, 0) -= Val(TxtBoxMontante.Text)
                 clientes(TxtBoxNmrConta.Text, 0) += Val(TxtBoxMontante.Text)
                 MsgBox("Transferencia efetuada com sucesso")
                 TxtBoxMontante.Text = ""

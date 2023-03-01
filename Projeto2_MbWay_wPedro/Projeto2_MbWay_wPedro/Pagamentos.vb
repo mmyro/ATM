@@ -13,8 +13,8 @@
     End Sub
 
     Private Sub BtnConfirmar_Click(sender As Object, e As EventArgs) Handles BtnConfirmar.Click
-        If clientes(FrmLogin.User, 0) >= Val(TxtBoxMontante.Text) And TxtBoxReferencia.Text <> "" And TxtBoxMontante.Text <> "" Then
-            clientes(FrmLogin.User, 0) -= Val(TxtBoxMontante.Text)
+        If clientes(User, 0) >= Val(TxtBoxMontante.Text) And TxtBoxReferencia.Text <> "" And TxtBoxMontante.Text <> "" Then
+            clientes(User, 0) -= Val(TxtBoxMontante.Text)
             MsgBox("Transferencia efetuada com sucesso")
             TxtBoxMontante.Text = ""
             TxtBoxReferencia.Text = ""
