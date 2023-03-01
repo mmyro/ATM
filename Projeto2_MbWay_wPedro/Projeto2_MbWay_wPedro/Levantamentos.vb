@@ -7,6 +7,7 @@
         aux = notas(0) * 100 + notas(1) * 50 + notas(2) * 20 + notas(3) * 10 + notas(4) * 5
         If cash > 250 Then
             MsgBox("A caixa so permite retirar ate 250 EUR")
+            TxtBoxDinheiro.Clear()
             Levantar = True
         ElseIf cash <= aux Then
             Do While cash <> 0

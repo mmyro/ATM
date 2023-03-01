@@ -27,7 +27,7 @@ Partial Class AddNotas
         Me.Btn10euros = New System.Windows.Forms.Button()
         Me.Btn20euros = New System.Windows.Forms.Button()
         Me.Btn5euros = New System.Windows.Forms.Button()
-        Me.Button1 = New System.Windows.Forms.Button()
+        Me.BtnLogout = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'Btn100euros
@@ -110,14 +110,19 @@ Partial Class AddNotas
         Me.Btn5euros.Text = "5"
         Me.Btn5euros.UseVisualStyleBackColor = False
         '
-        'Button1
+        'BtnLogout
         '
-        Me.Button1.Location = New System.Drawing.Point(304, 208)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(75, 23)
-        Me.Button1.TabIndex = 64
-        Me.Button1.Text = "Button1"
-        Me.Button1.UseVisualStyleBackColor = True
+        Me.BtnLogout.BackColor = System.Drawing.Color.FromArgb(CType(CType(5, Byte), Integer), CType(CType(108, Byte), Integer), CType(CType(242, Byte), Integer))
+        Me.BtnLogout.FlatAppearance.BorderSize = 0
+        Me.BtnLogout.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.BtnLogout.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BtnLogout.ForeColor = System.Drawing.Color.FromArgb(CType(CType(191, Byte), Integer), CType(CType(191, Byte), Integer), CType(CType(191, Byte), Integer))
+        Me.BtnLogout.Location = New System.Drawing.Point(289, 201)
+        Me.BtnLogout.Name = "BtnLogout"
+        Me.BtnLogout.Size = New System.Drawing.Size(90, 30)
+        Me.BtnLogout.TabIndex = 64
+        Me.BtnLogout.Text = "Logout"
+        Me.BtnLogout.UseVisualStyleBackColor = False
         '
         'AddNotas
         '
@@ -125,7 +130,7 @@ Partial Class AddNotas
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(18, Byte), Integer), CType(CType(38, Byte), Integer), CType(CType(64, Byte), Integer))
         Me.ClientSize = New System.Drawing.Size(391, 243)
-        Me.Controls.Add(Me.Button1)
+        Me.Controls.Add(Me.BtnLogout)
         Me.Controls.Add(Me.Btn100euros)
         Me.Controls.Add(Me.Btn50euros)
         Me.Controls.Add(Me.Btn10euros)
@@ -142,5 +147,5 @@ Partial Class AddNotas
     Friend WithEvents Btn10euros As Button
     Friend WithEvents Btn20euros As Button
     Friend WithEvents Btn5euros As Button
-    Friend WithEvents Button1 As Button
+    Friend WithEvents BtnLogout As Button
 End Class
