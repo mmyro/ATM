@@ -13,8 +13,9 @@ Public Class Transferencias
                 clientes(User, 0) -= Val(TxtBoxMontante.Text)
                 clientes(TxtBoxNmrConta.Text, 0) += Val(TxtBoxMontante.Text)
                 MsgBox("Transferencia efetuada com sucesso")
-                TxtBoxMontante.Text = ""
-                TxtBoxNmrConta.Text = ""
+                TxtBoxMontante.Clear()
+                TxtBoxNmrConta.Clear()
+                ok = False
             ElseIf TxtBoxNmrConta.Text = "" Or TxtBoxMontante.Text = "" Then
                 MsgBox("Transferencia não foi efetuada com sucesso")
             Else
@@ -22,9 +23,9 @@ Public Class Transferencias
             End If
         Else
             MsgBox("Numero da Conta Inválido")
-            ok = True
-            TxtBoxNmrConta.Text = ""
-            TxtBoxMontante.Text = ""
+            ok = False
+            TxtBoxNmrConta.Clear()
+            TxtBoxMontante.Clear()
         End If
     End Sub
 

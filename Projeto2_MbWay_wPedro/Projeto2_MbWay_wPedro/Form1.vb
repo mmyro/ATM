@@ -24,10 +24,16 @@
             End If
         ElseIf ok = True Then
             If User = 99 And TxtBoxPassword.Text = "0000" Then
+                TxtBoxPassword.Clear()
+                TxtBoxUsername.Clear()
+                ok = False
                 Me.Hide()
                 Admin.Show()
                 Admin.PicBoxCartao.Image = My.Resources.Admin
             ElseIf clientes(User, 1) = Val(TxtBoxPassword.Text) And bloqueio(User) < 3 Then
+                TxtBoxPassword.Clear()
+                TxtBoxUsername.Clear()
+                ok = False
                 Me.Hide()
                 Form2.Show()
                 Form2.PicBoxCartao.Image = My.Resources.Clientes
