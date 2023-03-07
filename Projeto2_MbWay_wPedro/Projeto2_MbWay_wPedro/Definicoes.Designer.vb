@@ -1,9 +1,9 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
 Partial Class Definicoes
     Inherits System.Windows.Forms.Form
 
     'Descartar substituições de formulário para limpar a lista de componentes.
-    <System.Diagnostics.DebuggerNonUserCode()> _
+    <System.Diagnostics.DebuggerNonUserCode()>
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
             If disposing AndAlso components IsNot Nothing Then
@@ -20,14 +20,13 @@ Partial Class Definicoes
     'OBSERVAÇÃO: o procedimento a seguir é exigido pelo Windows Form Designer
     'Pode ser modificado usando o Windows Form Designer.  
     'Não o modifique usando o editor de códigos.
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Definicoes))
         Me.LblTitulo = New System.Windows.Forms.Label()
         Me.TxtBoxOldPassword = New System.Windows.Forms.TextBox()
         Me.BtnNext = New System.Windows.Forms.Button()
         Me.LblOldPassword = New System.Windows.Forms.Label()
-        Me.BtnCancel = New System.Windows.Forms.Button()
         Me.LblBarra = New System.Windows.Forms.Label()
         Me.BtnOk = New System.Windows.Forms.Button()
         Me.BtnLimpar = New System.Windows.Forms.Button()
@@ -71,7 +70,7 @@ Partial Class Definicoes
         Me.BtnNext.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.BtnNext.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.BtnNext.ForeColor = System.Drawing.Color.FromArgb(CType(CType(174, Byte), Integer), CType(CType(181, Byte), Integer), CType(CType(191, Byte), Integer))
-        Me.BtnNext.Location = New System.Drawing.Point(334, 368)
+        Me.BtnNext.Location = New System.Drawing.Point(430, 368)
         Me.BtnNext.Name = "BtnNext"
         Me.BtnNext.Size = New System.Drawing.Size(90, 27)
         Me.BtnNext.TabIndex = 4
@@ -88,20 +87,6 @@ Partial Class Definicoes
         Me.LblOldPassword.Size = New System.Drawing.Size(138, 25)
         Me.LblOldPassword.TabIndex = 6
         Me.LblOldPassword.Text = "Password atual"
-        '
-        'BtnCancel
-        '
-        Me.BtnCancel.BackColor = System.Drawing.Color.FromArgb(CType(CType(5, Byte), Integer), CType(CType(108, Byte), Integer), CType(CType(242, Byte), Integer))
-        Me.BtnCancel.FlatAppearance.BorderSize = 0
-        Me.BtnCancel.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.BtnCancel.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.BtnCancel.ForeColor = System.Drawing.Color.FromArgb(CType(CType(174, Byte), Integer), CType(CType(181, Byte), Integer), CType(CType(191, Byte), Integer))
-        Me.BtnCancel.Location = New System.Drawing.Point(430, 368)
-        Me.BtnCancel.Name = "BtnCancel"
-        Me.BtnCancel.Size = New System.Drawing.Size(90, 27)
-        Me.BtnCancel.TabIndex = 7
-        Me.BtnCancel.Text = "Cancelar"
-        Me.BtnCancel.UseVisualStyleBackColor = False
         '
         'LblBarra
         '
@@ -323,7 +308,6 @@ Partial Class Definicoes
         Me.Controls.Add(Me.Btn9)
         Me.Controls.Add(Me.Btn7)
         Me.Controls.Add(Me.LblBarra)
-        Me.Controls.Add(Me.BtnCancel)
         Me.Controls.Add(Me.LblOldPassword)
         Me.Controls.Add(Me.BtnNext)
         Me.Controls.Add(Me.TxtBoxOldPassword)
@@ -342,7 +326,6 @@ Partial Class Definicoes
     Friend WithEvents TxtBoxOldPassword As TextBox
     Friend WithEvents BtnNext As Button
     Friend WithEvents LblOldPassword As Label
-    Friend WithEvents BtnCancel As Button
     Friend WithEvents LblBarra As Label
     Friend WithEvents BtnOk As Button
     Friend WithEvents BtnLimpar As Button

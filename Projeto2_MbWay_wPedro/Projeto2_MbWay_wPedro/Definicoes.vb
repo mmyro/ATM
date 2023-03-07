@@ -40,7 +40,7 @@
     End Sub
 
     Private Sub Teclas(sender As Object, e As EventArgs)
-        If ok = False Then
+        If ok = False And TxtBoxOldPassword.Text.Length < 4 Then
             TxtBoxOldPassword.Text &= sender.text
         End If
     End Sub

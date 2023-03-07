@@ -50,9 +50,9 @@
     End Sub
 
     Private Sub Teclas(sender As Object, e As EventArgs)
-        If ok = False Then
+        If ok = False And TxtNew.Text.Length < 4 Then
             TxtNew.Text &= sender.text
-        Else
+        ElseIf ok = True And TxtConfirm.Text.Length < 4 Then
             TxtConfirm.Text &= sender.text
         End If
     End Sub
@@ -64,4 +64,5 @@
             ok = False
         End If
     End Sub
+
 End Class

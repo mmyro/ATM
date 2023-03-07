@@ -99,9 +99,9 @@ Partial Class Admin
         Me.BtnSair.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.BtnSair.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.BtnSair.ForeColor = System.Drawing.Color.FromArgb(CType(CType(191, Byte), Integer), CType(CType(191, Byte), Integer), CType(CType(191, Byte), Integer))
-        Me.BtnSair.Location = New System.Drawing.Point(430, 368)
+        Me.BtnSair.Location = New System.Drawing.Point(435, 364)
         Me.BtnSair.Name = "BtnSair"
-        Me.BtnSair.Size = New System.Drawing.Size(85, 31)
+        Me.BtnSair.Size = New System.Drawing.Size(85, 27)
         Me.BtnSair.TabIndex = 36
         Me.BtnSair.Text = "Logout"
         Me.BtnSair.UseVisualStyleBackColor = False
@@ -129,6 +129,8 @@ Partial Class Admin
         Me.Controls.Add(Me.LblBarra)
         Me.Controls.Add(Me.LblTitulo)
         Me.Controls.Add(Me.PicBoxCartao)
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "Admin"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Admin"
