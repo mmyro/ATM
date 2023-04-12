@@ -22,6 +22,7 @@ Partial Class AddNotas
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(AddNotas))
         Me.Btn100euros = New System.Windows.Forms.Button()
         Me.Btn50euros = New System.Windows.Forms.Button()
         Me.Btn10euros = New System.Windows.Forms.Button()
@@ -39,7 +40,7 @@ Partial Class AddNotas
         Me.Btn100euros.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Btn100euros.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Btn100euros.ForeColor = System.Drawing.Color.FromArgb(CType(CType(174, Byte), Integer), CType(CType(181, Byte), Integer), CType(CType(191, Byte), Integer))
-        Me.Btn100euros.Location = New System.Drawing.Point(184, 118)
+        Me.Btn100euros.Location = New System.Drawing.Point(193, 118)
         Me.Btn100euros.Name = "Btn100euros"
         Me.Btn100euros.Size = New System.Drawing.Size(117, 40)
         Me.Btn100euros.TabIndex = 63
@@ -55,7 +56,7 @@ Partial Class AddNotas
         Me.Btn50euros.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Btn50euros.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Btn50euros.ForeColor = System.Drawing.Color.FromArgb(CType(CType(174, Byte), Integer), CType(CType(181, Byte), Integer), CType(CType(191, Byte), Integer))
-        Me.Btn50euros.Location = New System.Drawing.Point(64, 118)
+        Me.Btn50euros.Location = New System.Drawing.Point(73, 118)
         Me.Btn50euros.Name = "Btn50euros"
         Me.Btn50euros.Size = New System.Drawing.Size(117, 40)
         Me.Btn50euros.TabIndex = 62
@@ -71,7 +72,7 @@ Partial Class AddNotas
         Me.Btn10euros.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Btn10euros.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Btn10euros.ForeColor = System.Drawing.Color.FromArgb(CType(CType(174, Byte), Integer), CType(CType(181, Byte), Integer), CType(CType(191, Byte), Integer))
-        Me.Btn10euros.Location = New System.Drawing.Point(145, 72)
+        Me.Btn10euros.Location = New System.Drawing.Point(154, 72)
         Me.Btn10euros.Name = "Btn10euros"
         Me.Btn10euros.Size = New System.Drawing.Size(75, 40)
         Me.Btn10euros.TabIndex = 61
@@ -87,7 +88,7 @@ Partial Class AddNotas
         Me.Btn20euros.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Btn20euros.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Btn20euros.ForeColor = System.Drawing.Color.FromArgb(CType(CType(174, Byte), Integer), CType(CType(181, Byte), Integer), CType(CType(191, Byte), Integer))
-        Me.Btn20euros.Location = New System.Drawing.Point(226, 72)
+        Me.Btn20euros.Location = New System.Drawing.Point(235, 72)
         Me.Btn20euros.Name = "Btn20euros"
         Me.Btn20euros.Size = New System.Drawing.Size(75, 40)
         Me.Btn20euros.TabIndex = 60
@@ -103,7 +104,7 @@ Partial Class AddNotas
         Me.Btn5euros.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Btn5euros.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Btn5euros.ForeColor = System.Drawing.Color.FromArgb(CType(CType(174, Byte), Integer), CType(CType(181, Byte), Integer), CType(CType(191, Byte), Integer))
-        Me.Btn5euros.Location = New System.Drawing.Point(64, 72)
+        Me.Btn5euros.Location = New System.Drawing.Point(73, 72)
         Me.Btn5euros.Name = "Btn5euros"
         Me.Btn5euros.Size = New System.Drawing.Size(75, 40)
         Me.Btn5euros.TabIndex = 59
@@ -136,6 +137,8 @@ Partial Class AddNotas
         Me.Controls.Add(Me.Btn10euros)
         Me.Controls.Add(Me.Btn20euros)
         Me.Controls.Add(Me.Btn5euros)
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "AddNotas"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "AddNotas"

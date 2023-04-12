@@ -30,9 +30,9 @@ Partial Class Form2
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.BtnSair = New System.Windows.Forms.Button()
         Me.BtnLevantamentos = New System.Windows.Forms.Button()
-        Me.PicBoxCartao = New System.Windows.Forms.PictureBox()
         Me.BtnAlterarCod = New System.Windows.Forms.Button()
         Me.Panel2 = New System.Windows.Forms.Panel()
+        Me.PicBoxCartao = New System.Windows.Forms.PictureBox()
         Me.Panel1.SuspendLayout()
         CType(Me.PicBoxCartao, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -142,16 +142,6 @@ Partial Class Form2
         Me.BtnLevantamentos.Text = "Levantamentos"
         Me.BtnLevantamentos.UseVisualStyleBackColor = False
         '
-        'PicBoxCartao
-        '
-        Me.PicBoxCartao.Image = CType(resources.GetObject("PicBoxCartao.Image"), System.Drawing.Image)
-        Me.PicBoxCartao.Location = New System.Drawing.Point(0, 0)
-        Me.PicBoxCartao.Name = "PicBoxCartao"
-        Me.PicBoxCartao.Size = New System.Drawing.Size(145, 57)
-        Me.PicBoxCartao.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage
-        Me.PicBoxCartao.TabIndex = 5
-        Me.PicBoxCartao.TabStop = False
-        '
         'BtnAlterarCod
         '
         Me.BtnAlterarCod.BackColor = System.Drawing.Color.FromArgb(CType(CType(18, Byte), Integer), CType(CType(38, Byte), Integer), CType(CType(64, Byte), Integer))
@@ -170,10 +160,20 @@ Partial Class Form2
         'Panel2
         '
         Me.Panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.Panel2.Location = New System.Drawing.Point(148, -7)
+        Me.Panel2.Location = New System.Drawing.Point(148, 2)
         Me.Panel2.Name = "Panel2"
-        Me.Panel2.Size = New System.Drawing.Size(548, 421)
+        Me.Panel2.Size = New System.Drawing.Size(548, 412)
         Me.Panel2.TabIndex = 5
+        '
+        'PicBoxCartao
+        '
+        Me.PicBoxCartao.Image = CType(resources.GetObject("PicBoxCartao.Image"), System.Drawing.Image)
+        Me.PicBoxCartao.Location = New System.Drawing.Point(0, 0)
+        Me.PicBoxCartao.Name = "PicBoxCartao"
+        Me.PicBoxCartao.Size = New System.Drawing.Size(145, 57)
+        Me.PicBoxCartao.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage
+        Me.PicBoxCartao.TabIndex = 5
+        Me.PicBoxCartao.TabStop = False
         '
         'Form2
         '
@@ -183,6 +183,7 @@ Partial Class Form2
         Me.ClientSize = New System.Drawing.Size(694, 414)
         Me.Controls.Add(Me.Panel2)
         Me.Controls.Add(Me.Panel1)
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "Form2"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
@@ -200,7 +201,7 @@ Partial Class Form2
     Friend WithEvents Panel1 As Panel
     Friend WithEvents BtnAlterarCod As Button
     Friend WithEvents Panel2 As Panel
-    Friend WithEvents PicBoxCartao As PictureBox
     Friend WithEvents BtnLevantamentos As Button
     Friend WithEvents BtnSair As Button
+    Friend WithEvents PicBoxCartao As PictureBox
 End Class
